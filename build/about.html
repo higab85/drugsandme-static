@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    
+    <meta name="keywords" content="Drugs and me, Drugs, drugsandme, harm reduction, Cannabis, Cocaine, MDMA, drug">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>
+  Drugs and Me - About us
+</title>
+    <meta property="og:image" content="http://drugsand.static/article/images/icons/dnme-top-left.png" />
+    <!--  START Favicons  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="static/images/icons/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="static/images/icons/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="static/images/icons/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="static/images/icons/favicons/manifest.json">
+    <link rel="mask-icon" href="static/images/icons/favicons/safari-pinned-tab.svg" color="#5bd57a">
+    <link rel="shortcut icon" href="static/images/icons/favicons/favicon.ico">
+    <meta name="msapplication-config" content="static/images/icons/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!--  END Favicons  -->
+
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- <script src="static/js/libraries/jquery.min.js' %}"> </script> -->
+    <script src="static/js/libraries/jquery.min.js" charset="utf-8"></script>
+    <script src="static/js/bootstrap.js"> </script>
+    <script src="static/js/main.js"> </script>
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <style media="screen">
+      @font-face {
+        font-family: Bebas Neue;
+        src: url(static/fonts/BebasNeue.otf);
+      }
+    </style>
+
+    <!--  Cookies Warning  -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/cookie-bar/1/cookiebar-latest.min.js?thirdparty=1&amp;always=1&amp;showNoConsent=1"></script>
+
+    <!-- Google analytics-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-73235857-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <link href="http://cdn.jsdelivr.net/cookie-bar/1/cookiebar.min.css" rel="stylesheet">
+
+      <!--  JS Libraries -->
+     <script src="//www.google-analytics.com/analytics.js" async=""></script>
+
+    
+    <script src="nunjucks.js"></script>
+    <style>
+      .theme-bg{
+        background-color:#EF6767 !important;
+      }
+      .theme-color{
+        color: #EF6767 !important;
+      }
+      .theme-light-bg{
+        background-color: #EF6767 !important;
+      }
+      .theme-light-color{
+        color:#EF6767 !important;
+      }
+    </style>
+
+
+  </head>
+
+
+  <body>
+    <div class="site-wrapper">
+      
+  <div class="theme-bg">
+
+        <div class="cover-container site-wrapper-inner">
+          <div class="masthead clearfix" id="navbar">
+
+            <div class="inner hidden-xs">
+              <nav>
+                <ul class="nav">
+                  <li class="nav-left">
+                    <a href="index.html"><img id="home-top-left" src="static/images/icons/dnme-top-left.png" alt="" /></a>
+                  </li>
+                  <li class="nav-right" id="search">
+                    <div id="social-search">
+                      <a class="" href="https://facebook.com/drugsandmehub"><div class="nav-social-icon boxed"><img class="img-responsive" src="static/images/icons/social/social-icon-facebook.png" alt="facebook"></div></a>
+                      <a class="" href="https://twitter.com/drugsandmehub"><div class="nav-social-icon boxed"><img class="img-responsive" id="twitter-social-icon" src="static/images/icons/social/social-icon-twitter.png" alt="twitter"></div></a>
+                      <a class="" href="https://www.linkedin.com/company/10532041"><div class="nav-social-icon boxed"><img class="img-responsive" src="static/images/icons/social/social-icon-linkdin.png" alt="linkdin"></div></a>
+
+                    </div>
+                    <!-- START SEARCH ----------------------------------------->
+                    <div id="search-bar">
+                      <div class="has-feedback">
+                        <input id="searchText" type="text" class=" searchtext form-control boxed searchbarbox" placeholder="search" onfocus="this.placeholder=''" onblur="this.placeholder='search'"/>
+                        <i class="glyphicon glyphicon-search form-control-feedback text-right"></i>
+                      </div>
+
+                      <div id="item-picker" class="item-picker hidden pull-left">
+                        <div class="item alcohol">
+                          <a href="/alcohol" class="item-link">
+                            <h5 class="item-name hidden">Alcohol</h5>
+                          </a>
+                          <ul>
+                            <li class="tag">wine</li>
+                            <li class="tag">beer</li>
+                            <li class="tag">booze</li>
+                            <li class="tag">alcohol</li>
+                          </ul>
+                        </div>
+                        <div class="item cannabis">
+                          <a href="/cannabis" class="item-link">
+                            <h5 class="item-name hidden">Cannabis</h5>
+                          </a>
+                          <ul>
+                            <li class="tag">ganja</li>
+                            <li class="tag">skunk</li>
+                            <li class="tag">marihuana</li>
+                            <li class="tag">mary jane</li>
+                            <li class="tag">grass</li>
+                            <li class="tag">pot</li>
+                            <li class="tag">dank</li>
+                            <li class="tag">chronic</li>
+                            <li class="tag">resin</li>
+                            <li class="tag">weed</li>
+                            <li class="tag">buds</li>
+                            <li class="tag">kush</li>
+                            <li class="tag">cannabis</li>
+                          </ul>
+                        </div>
+                        <div class="item cocaine">
+                          <a href="/cocaine" class="item-link">
+                            <h5 class="item-name hidden">Cocaine</h5>
+                          </a>
+                          <ul>
+                            <li class="tag">white</li>
+                            <li class="tag">coke</li>
+                            <li class="tag">snow</li>
+                            <li class="tag">speedball</li>
+                            <li class="tag">dust</li>
+                            <li class="tag">nose candy</li>
+                            <li class="tag">flake</li>
+                            <li class="tag">cocaine</li>
+                          </ul>
+                        </div>
+                        <div class="item ketamine">
+                          <a href="/ketamine" class="item-link">
+                            <h5 class="item-name hidden">Ketamine</h5>
+                          </a>
+                          <ul>
+                            <li class="tag">Special K</li>
+                            <li class="tag">Kit Kat</li>
+                            <li class="tag">Kay</li>
+                            <li class="tag">Ketamine</li>
+                          </ul>
+                        </div>
+                        <div class="item lsd">
+                          <a href="/lsd" class="item-link">
+                            <h5 class="item-name hidden">LSD</h5>
+                          </a>
+                          <ul>
+                            <li class="tag">lysergic acid diethylamide</li>
+                            <li class="tag">tab</li>
+                            <li class="tag">acid</li>
+                            <li class="tag">lucy</li>
+                            <li class="tag">LSD</li>
+                          </ul>
+                        </div>
+                        <div class="item mdma">
+                          <a href="/mdma" class="item-link">
+                            <h5 class="item-name hidden">MDMA</h5>
+                          </a>
+                          <ul>
+                            <li class="tag">X</li>
+                            <li class="tag">XTC</li>
+                            <li class="tag">E</li>
+                            <li class="tag">molly</li>
+                            <li class="tag">mandy</li>
+                            <li class="tag">ecstasy</li>
+                            <li class="tag">MDMA</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- END SEARCH-->
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!--  Navbar for mobile -->
+            <div class="visible-xs">
+              <ul class="nav visible-xs">
+                <li class="pull-left">
+                  <a href="index.html"><img id="mobile-nav-brain" src="static/images/icons/brain.png" alt="Drugs and Me" /> </a>
+                </li>
+                <li id="mobile-nav-buttons-right" class="pull-right">
+                  <div class="mobile-nav-button">
+                    <img class="mobile-nav-button-search" id="mobile-nav-button-search" src="static/images/icons/search.png" alt="Search" />
+                    <img class="mobile-nav-button-search mobile-nav-button-close hidden" id="mobile-nav-button-search-close" src="static/images/icons/close.png" alt="Close search" />
+                  </div>
+                  <div class="mobile-nav-button">
+                    <img class="mobile-nav-button-menu" id="mobile-nav-button-menu" src="static/images/icons/menu.png" alt="Menu" />
+                    <img class="mobile-nav-button-menu mobile-nav-button-close hidden" id="mobile-nav-button-menu-close" src="static/images/icons/close.png" alt="Close menu" />
+                  </div>
+                </li>
+              </ul>
+              <div id="mobile-nav-collapse" class="hidden">
+                <div id="mobile-nav-collapse-search" class="hidden">
+                  <!-- START SEARCH ----------------------------------------->
+                  <div id="mobile-search-bar">
+                    <div class="has-feedback">
+                      <input id="mobile-searchText" type="text" class=" searchtext form-control searchbarbox" placeholder="search" onfocus="this.placeholder=''" onblur="this.placeholder='search'"/>
+                      <i class="glyphicon glyphicon-search form-control-feedback text-right"></i>
+                    </div>
+
+                    <div id="mobile-item-picker" class="item-picker hidden pull-left">
+                      <div class="item alcohol">
+                        <a href="/alcohol" class="item-link">
+                          <h5 class="item-name hidden">Alcohol</h5>
+                        </a>
+                        <ul>
+                          <li class="tag">wine</li>
+                          <li class="tag">beer</li>
+                          <li class="tag">booze</li>
+                          <li class="tag">alcohol</li>
+                        </ul>
+                      </div>
+                      <div class="item cannabis">
+                        <a href="/cannabis" class="item-link">
+                          <h5 class="item-name hidden">Cannabis</h5>
+                        </a>
+                        <ul>
+                          <li class="tag">ganja</li>
+                          <li class="tag">skunk</li>
+                          <li class="tag">marihuana</li>
+                          <li class="tag">mary jane</li>
+                          <li class="tag">grass</li>
+                          <li class="tag">pot</li>
+                          <li class="tag">dank</li>
+                          <li class="tag">chronic</li>
+                          <li class="tag">resin</li>
+                          <li class="tag">weed</li>
+                          <li class="tag">buds</li>
+                          <li class="tag">kush</li>
+                          <li class="tag">cannabis</li>
+                        </ul>
+                      </div>
+                      <div class="item cocaine">
+                        <a href="/cocaine" class="item-link">
+                          <h5 class="item-name hidden">Cocaine</h5>
+                        </a>
+                        <ul>
+                          <li class="tag">white</li>
+                          <li class="tag">coke</li>
+                          <li class="tag">snow</li>
+                          <li class="tag">speedball</li>
+                          <li class="tag">dust</li>
+                          <li class="tag">nose candy</li>
+                          <li class="tag">flake</li>
+                          <li class="tag">cocaine</li>
+                        </ul>
+                      </div>
+                      <div class="item ketamine">
+                        <a href="/ketamine" class="item-link">
+                          <h5 class="item-name hidden">Ketamine</h5>
+                        </a>
+                        <ul>
+                          <li class="tag">Special K</li>
+                          <li class="tag">Kit Kat</li>
+                          <li class="tag">Kay</li>
+                          <li class="tag">Ketamine</li>
+                        </ul>
+                      </div>
+                      <div class="item lsd">
+                        <a href="/lsd" class="item-link">
+                          <h5 class="item-name hidden">LSD</h5>
+                        </a>
+                        <ul>
+                          <li class="tag">lysergic acid diethylamide</li>
+                          <li class="tag">tab</li>
+                          <li class="tag">acid</li>
+                          <li class="tag">lucy</li>
+                          <li class="tag">LSD</li>
+                        </ul>
+                      </div>
+                      <div class="item mdma">
+                        <a href="/mdma" class="item-link">
+                          <h5 class="item-name hidden">MDMA</h5>
+                        </a>
+                        <ul>
+                          <li class="tag">X</li>
+                          <li class="tag">XTC</li>
+                          <li class="tag">E</li>
+                          <li class="tag">molly</li>
+                          <li class="tag">mandy</li>
+                          <li class="tag">ecstasy</li>
+                          <li class="tag">MDMA</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END SEARCH-->
+                </div>
+                <div id="mobile-nav-collapse-menu" class="hidden">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li id="mobile-nav-collapse-menu-drugs-collapse" class="mobile-nav-collapse-menu-collapsible">
+                      <span>Drugs</span> <img src="static/images/icons/down.png" alt="" class="pull-right">
+                      <ul class="hidden">
+                        <li><a href="alcohol.html">Alcohol</a></li>
+                        <li><a href="cannabis.html">Cannabis</a></li>
+                        <li><a href="cocaine.html">Cocaine</a></li>
+                        <li><a href="ketamine.html">Ketamine</a></li>
+                        <li><a href="lsd.html">LSD</a></li>
+                        <li><a href="mdma.html">MDMA</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="me.html">Me</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html/#contact">Contact</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="inner cover">
+              
+<div id="cover" class="col-xs-12 col-md-9" style="background-color: #EF6767">
+
+  <img src="static/images/non-drugs/about/about-illustration.png" style="height:250px; top: -200px;" alt="about">
+  <div id="cover-text">
+    <h1>About us</h1>
+    <h4>About the project and the team</h4>
+  </div>
+</div>
+
+            </div>
+          </div>
+        </div>
+        <div id="content" class=" container-fluid site-wrapper-inner">
+          
+<div class="row">
+  <div class="col-md-10" role="main" id="me-content">
+    <div class='' id="intro">
+      <p>
+        <strong>drugsand.me</strong> is an educational website that provides information about existing
+        harm reduction methods for drug users. We do not promote drug use, but
+        we do encourage you to be safe if you are thinking of taking any kind of
+        drug. This website was inspired <a href="/about">by the thousands of
+        deaths</a> that occur in the UK due lack of correct drug education.
+        While there are websites that already provide information on
+        different drugs, we provide a comprehensive, objective, and easy-to-understand
+        guide to help you stay safe and be smart when using drugs.
+      </p>
+      <blockquote cite="http://">
+        <p>
+          "People will always use drugs. They always have used drugs. We must
+          learn to live with this fact."
+        </p>
+        <footer>
+          <a href="http://www.drcarlhart.com/">Dr Carl Hart</a>
+        </footer>
+      </blockquote>
+      <p>
+        At drugsand.me we aim to provide an a comprehensive, easy-to-understand
+        information hub for everyone who wants to learn how to be safe and smart
+        when using drugs. We provide a simple website to find essential information from varied
+        sources, including scientists and the online community.
+        <br>
+        Although we have done thorough research to gather this information, you
+        always do your own research and further reading. We encourage you to explore
+        the excellent and varied sources that we have linked throughout the site.
+      </p>
+      <p><strong>A word about the information in this website:</strong></p>
+      <p>
+        The content in this webpage is obtained, whenever information was
+        found, from scientific and evidence-based resources. However, there are
+        many gaps where a lot of research needs to be done, not because there
+        isn´t interest in the scientific literature, but because drug policies
+        limit controlled research on drugs considered as recreational ones.
+        Wherever scientific-based information was not found, as many as
+        possible resources were compared and contrasted to provide the most
+        accurate and useful piece of advice/information.
+      </p>
+      <p>
+        drugsand.me supports researchers, institutes and
+        foundations that are investing time and money in scientific research
+        into psychoactive drugs, working towards improved consciousness and
+        health-oriented drug policy reform.
+      </p>
+      <p>
+        Prior knowledge on drugs and other rewarding habits have been shown to
+        directly diminish the brain alluring by them, so (most probably) the
+        propensity to develop an addiction [<a href="http://www.pnas.org/content/112/8/2539">Gut et al, 2015</a>,
+        <a href="http://journal.frontiersin.org/article/10.3389/fpsyg.2015.00090/abstract">
+          Kirk and Montague, 2015
+        </a>].
+      </p>
+    </div>
+    <div id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p>
+        If you would like to provide feedback for the website, collaborate with us,
+        contribute to an article, or send ideas and sources, please get in touch
+        by emailing <a href="mailto:contact@drugsand.me">contact@drugsand.me</a>
+      </p>
+      <p>
+        If you would like to stay updated about our events, initiatives, and new features of
+        the website, please subscribe here:
+      </p>
+      <!-- Begin MailChimp Signup Form -->
+      <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+      	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+      	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+      	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+      </style>
+      <div id="mc_embed_signup">
+        <form action="//drugsand.us12.list-manage.com/subscribe/post?u=27eb6c7445633027c8160efd7&amp;id=63bf3101af" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+          	<label for="mce-EMAIL">Subscribe to our mailing list</label>
+          	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_27eb6c7445633027c8160efd7_63bf3101af" tabindex="-1" value=""></div>
+            <div class="text-center clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </div>
+        </form>
+      </div>
+      <!--End mc_embed_signup-->
+    </div>
+  </div>
+  <div class="col-md-2" role="complementary">
+    <nav id="sidebar" class="nav nav-stacked affix bs-docs-sidebar hidden-print hidden-sm hidden-xs">
+      <div class="bigger-sidebar-boxes boxed donate">
+        <h3 class=""><a href="donate.html">Donate</a></h3>
+      </div>
+      <br>
+      <div class="alcohol drugs-sidebar-boxes">
+        <a href="alcohol.html">
+          <h4>Alcohol</h4>
+        </a>
+      </div>
+      <div class="cannabis drugs-sidebar-boxes">
+        <a href="cannabis.html">
+          <h4>Cannabis</h4>
+        </a>
+      </div>
+      <div class="cocaine drugs-sidebar-boxes">
+        <a href="cocaine.html">
+          <h4>Cocaine</h4>
+        </a>
+      </div>
+      <div class="ketamine drugs-sidebar-boxes">
+        <a href="ketamine.html">
+          <h4>Ketamine</h4>
+        </a>
+      </div>
+      <div class="lsd drugs-sidebar-boxes">
+        <a href="lsd.html">
+          <h4>LSD</h4>
+        </a>
+      </div>
+      <div class="mdma drugs-sidebar-boxes">
+        <a href="mdma.html">
+          <h4>MDMA</h4>
+        </a>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+        </div>
+
+      </div>
+      <nav id="footer">
+        <ul class="nav" id="footer-wrapper">
+          <li class="nav-left">
+            <p>
+              <font color="white">
+              Copyright © 2016. All rights reserved.
+            </font>
+            </p>
+          </li>
+          <li class="nav-right" id="footer-links">
+            <ul class="list-inline">
+              <li><a href="about.html"><font color="#fff">About us</font></a></li>
+              <li><a href="about.html#contact"><font color="#fff">Contact us</font></a></li>
+              <li><a href="disclaimer.html"><font color="#fff">Disclaimer</font></a></li>
+              <li><a href="donate.html"><font color="#fff">Donate</font></a></li>
+            </ul>
+          </li>
+        </ul>
+
+        </div>
+      </nav>
+
+    </div>
+
+  </body>
+</html>

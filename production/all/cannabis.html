@@ -1,0 +1,871 @@
+{% extends 'drug.html' %}
+
+{% block title %}
+  Cannabis | Dose, Onset, Effects| Risks| Drugs and Me
+{% endblock %}
+
+{% block meta_seo %}
+<meta name="description" content="Drugsand.me is an educational website about
+harm reduction for weed / cannabis use, including effects, risks, dose, onset,
+legal and recreational use.">
+{% endblock %}
+
+{% block header %}
+  <style>
+    .theme-bg{
+      background-color:#56C18A !important;
+    }
+    .theme-color{
+      color: #56C18A !important;
+    }
+    .theme-light-bg{
+      background-color: #56C18A !important;
+    }
+    .theme-light-color{
+      color:#56C18A !important;
+    }
+  </style>
+
+  <meta name="drug-name" content="Cannabis">
+{% endblock %}
+
+{% block cover_contents %}
+  <img src="static/images/drugs/cannabis/cannabis-illustration.png" alt="cannabis">
+  <div id="cover-text">
+    <h1>Cannabis</h1>
+    <h4>Weed, skunk, marijuana, kush, pot, hash</h4>
+  </div>
+{% endblock %}
+
+{% block intro_content %}
+  <p>
+    Cannabis is known for its pain-relieving and mind-altering properties, and
+    has been used by different cultures for millennia as an aid to medical
+    and spiritual activities. There are many different strains (species) of
+    the cannabis plant, and all of them have different chemical compositions
+    and effects. Recreational users can find themselves on a different type
+    of ‘high’ depending on their strain of choice, but we can generalise that
+    cannabis induces a state of happy and pain-free relaxation. Scientists are
+    still identifying new varieties, each with a different chemical make-up,
+    while also making new discoveries about cannabis’ therapeutic potential.
+  </p>
+  <p>
+    Nowadays, cannabis is the most-used illicit drug in the world. However,
+    the political landscape is changing: an increasing number of countries
+    are legalising cannabis for medical and recreational purposes.
+    While it is safer than other drugs, such as alcohol, cannabis
+    can still hook users without proper care and responsibility.
+  </p>
+{% endblock %}
+
+{% block intro_content_1 %}
+  <h3 class="funky">It's not harmless</h3>
+  <p class="hidden">
+    Cannabis is not harmless: dependence and addiction can occur
+  </p>
+{% endblock %}
+{% block intro_content_2 %}
+  <h3 class="funky"> Drink water</h3>
+  <p class="hidden">
+    When feeling unwell after using cannabis, the road to recovery
+    involves drinking plenty of water, consuming some sugar, lying down and
+    avoiding drugs for the rest of the day.
+  </p>
+{% endblock %}
+{% block intro_content_3 %}
+  <h3 class="funky">Edibles</h3>
+  <p class="hidden">
+    Careful with edible cannabis products. It is the easiest way to overdose.
+    Don´t take more than has been recommended, even if the high takes
+    longer than expected to kick in.
+  </p>
+{% endblock %}
+
+
+{% block effects_content %}
+  <p>
+    We have listed the most common effects of cannabis. Please note
+    that everyone can be affected differently, and this is not an exhaustive
+    list. Not everyone experiences these effects, and other effects are possible.
+  </p>
+  <p>
+    The likelihood of feeling these effects, and the strength of the sensation,
+    depends on the <a href="#harm-reduction-timeline">THC:CBD ratio</a> of the
+    cannabis.
+  </p>
+{% endblock %}
+
+{% block effects_list_positive %}
+  <li><span>Feel relaxed</span></li>
+  <li><span>Talkative and sociable</span></li>
+  <li><span>Happiness</span></li>
+  <li><span>Laughter</span></li>
+{% endblock %}
+
+{% block effects_list_neutral %}
+  <li><span>Increased appetite; 'munchies'</span></li>
+  <li><span>Distorted sense of time and space</span></li>
+  <li><span>Alteration of sight and smell</span></li>
+  <li><span>Loss of pain perception</span></li>
+{% endblock %}
+{% block effects_list_negative %}
+  <li><span>
+    Impairment of short-term memory
+  </span></li>
+  <li><span>Fatigue</span></li>
+  <li><span>Paranoia</span></li>
+{% endblock %}
+
+{% block dose_and_onset_content %}
+  <h3>How? How much? When? For how long?</h3>
+  <div class="side-note">
+    <p>
+      Read our section on dosing and tolerance in <a href="me.html">ME</a> for more
+      information.
+    </p>
+  </div>
+  <p>
+    The high you experience from a given dose of cannabis depends on many
+    different details about the user, such as their weight, the speed of their
+    metabolism, their past experiences and the situation in which the cannabis
+    is consumed.
+  </p>
+  <p>
+    The same is true of every other drug, but with cannabis, it is especially
+    difficult to identify one’s ideal quantity, due to the variety of strains,
+    the way you consume it, and the distribution of the active compounds in the
+    buds.
+  </p>
+  <h3 id="how-you-take-it-matters">How you take it matters...
+    <small>
+      From the healthiest to the most harmful ways to get ‘high’:
+    </small>
+  </h3>
+  <h4>Spray</h4>
+  <p>
+    This route of administration is the healthiest, but it can only be
+    obtained with a medical prescription in countries where this is legal and
+    sold. As such, it is barely used among recreational drug users, who for
+    the most part are left with more calorific or carcinogenic alternatives.
+    <a href="https://www.mstrust.org.uk/a-z/sativex-nabiximols">Sativex</a> is the most widely-known spray. It contains high levels of both
+    THC and CBD, and takes around 15 minutes to kick in.
+  </p>
+  <h4>Vaping/Vaporisation</h4>
+    <div class="side-note">
+      <p>
+        Read about <a href="https://www.leafly.com/news/cannabis-101/how-does-vaporization-work">how vaporisation works</a>.
+      </p>
+    </div>
+  <p>
+    <a href="https://www.leafly.com/news/cannabis-101/how-does-vaporization-work">Vaping</a> involves heating up cannabis to release THC and other cannabinoids.
+    Vaping is, crucially, a cleaner alternative to combustion (i.e.
+    smoking/inhaling). The heating process creates a temperature cool enough to
+    avoid creating the toxins that appear before the burning point. Therefore, vaping
+    is likely to reduce the coughing and throat irritation associated with
+    smoking.  It also doesn’t require any tobacco, and therefore may reduce
+    tobacco addiction in cannabis users [Ref 3, 7, 8]. This may be the most
+    expensive method of administration, because of the price of the vaporiser.
+    However, vaporising could be a cost-effective method in the long term [Ref 8, 9].
+  </p>
+  <h4>Eating</h4>
+  <p>
+    Aside from the preparation, eating is probably the easiest and safest way to
+    consume cannabis. But eating cannabis is not without dangers: new users
+    anticipate similar timing and effects to when they are
+    vaping/smoking/inhaling, but <strong>edibles take much longer</strong> (up to 2 hours)
+    to kick in, and it’s tempting to re-dose before the high comes on.
+    <strong>Be patient and wait for it</strong>: if the first dose wasn't
+    strong enough, try a higher dose another day. Re-dosing is the easiest way
+    to overdose! People normally feel that edibles give them a “body high,”
+    this is because the compounds in cannabis are slightly altered by the
+    stomach, intestine and liver.
+  </p>
+  <h4>Inhaling</h4>
+  <p>
+    Cannabis can be inhaled through a <a href="(http://bee-high.com/pages/bongs-bubblers-and-beyond#unit1)">pipe or a bong</a>.
+    While it's less harmful than smoking, it is easier to inhale greater
+    quantities of smoke. Users should be careful not to breathe too deeply in order to regulate their high.
+    Bongs with ice catchers can reduce the irritation of the throat as the ice
+    cools down the smoke.
+  </p>
+  <h4>Smoking</h4>
+  <p>
+    Smoking cannabis is the most common way to get high, even though it’s the
+    unhealthiest. This method <strong>increases the probability of developing lung
+    cancer</strong> because burning cannabis (with or without tobacco) creates
+    toxins associated with cancer. In Europe, cannabis is often mixed with a
+    much deadlier companion: tobacco. Adding tobacco to your cannabis increases
+    the chances of throat irritation, and also increases the risks of cancer
+    and dependence. Read more below.
+  </p>
+  <div class="brain-science">
+    <img src="static/images/icons/brain.png" alt="nueroscience info toggle">
+    <span class="click-me-tip">Click the brain for neuro-info!</span>
+    <div class="brain-science-content  boxed hidden">
+      <p>
+        Tobacco and cannabis are often used together and have a unique
+        relationship.
+        <a href="http://journal.frontiersin.org/article/10.3389/fpsyt.2016.00104/full">In a recent worldwide survey</a>,
+        65% of respondents said they
+        smoke joints made with cannabis and tobacco. Studies indicate that the
+        likelihood of developing cannabis dependence is increased by 5 times
+        when cannabis is smoked with tobacco, as opposed to on its own e.g.
+        smoking cigarettes and cannabis, and together, in joints. Often, users
+        pair the two because the tobacco acts as an inexpensive filler.
+      </p>
+      <p>
+        A hypothesis suggests that this increase in addictiveness may be a
+        two-way street, with the cannabis enhancing your likelihood of
+        developing nicotine dependence. Being addicted to nicotine is thought
+        to go hand-in-hand with poorer psychiatric and psychosocial conditions.
+      </p>
+      <p>
+        Finally, the World Health Organisation notes that smoking-related
+        deaths are the most preventable kind in the world. So it’s imperative
+        that alternative methods of consuming cannabis are used. However,
+        smoking cannabis with tobacco is still the go-to method in most
+        countries around the world.
+      </p>
+    </div>
+  </div>
+  <p>
+    <small>
+      Written by <a href="https://www.ucl.ac.uk/cpu/team/psychopharmacologyunit/chandni-hindocha">Chandni Hindocha</a>, PhD student at UCL
+    </small>
+  </p>
+  <h3>How much?</h3>
+  <h4>Smoking</h4>
+  <p>
+    For someone consuming the average dose, a one gram bag of cannabis will
+    last between 8–12 smokes, if you roll your joints with king skins and
+    mix your weed with tobacco.
+  </p>
+  <p>
+    Every time you try a new strain, or use a different supplier, smoke a
+    <a href="me.html">smaller dose than you are used to</a>, so you can notice
+    variations in the effects and potency of the drug (we define potency as
+    the amount of active ingredient required to produce a desired effect).
+  </p>
+  <ul>
+    <li><span><strong>Light dose:</strong> 0.05 g</span></li>
+    <li><span><strong>Common dose:</strong> 0.15 g</span></li>
+    <li><span><strong>Strong dose:</strong> 0.25 g</span></li>
+  </ul>
+  <h4>Eating</h4>
+  <p>
+    When you cook edibles, there are even more factors that influence the high
+    and effect you'll get from the food. Some of these are: the strain you are
+    using, whether you are using oil or butter, the time you leave it cooking,
+    the strength of the heat (low heat, between 1-2 hours in a saucepan is
+    optimum), and of course, your culinary skills... You might need to practise
+    cooking with cannabis more than once before you get the optimal high from
+    the amount you choose to cook.
+  </p>
+  <ul>
+    <li><span><strong>Light dose:</strong> 2-4 mg</span></li>
+    <li><span><strong>Medium dose:</strong> 3-8 mg</span></li>
+    <li><span><strong>Strong dose:</strong> 4-15 mg</span></li>
+  </ul>
+  <h3>When do the effects kick in and for how long?</h3>
+  <p>
+    The <strong>START</strong> time below is when you will usually begin to feel the effects
+    of cannabis from the time when you first take it. <strong>DURATION</strong> is
+    roughly the length of time you will experience the effects, after which the
+    effects will start to wind down and you might start to feel the calm-down/comedown
+    effects.
+  </p>
+  <h4>Smoking</h4>
+  <ul>
+    <li><span><strong>START:</strong> 2-10 minutes</span></li>
+    <li><span><strong>DURATION:</strong> 2-8 hours</span></li>
+  </ul>
+  <h4>Eating</h4>
+  <ul>
+    <li><span><strong>START:</strong> 20-120 minutes (depends on stomach content)</span></li>
+    <li><span><strong>DURATION:</strong> 3-9 hours</span></li>
+  </ul>
+  <p>[Ref 11, 12]</p>
+  <p>
+    <a href="http://www.marijuana.com/blog/news/2016/04/what-is-kief/">Kief</a>
+    is the resin that falls off dry cannabis or what accumulates in grinders.
+    It is the strongest part and contains high concentrations of THC. Watch
+    out for this.
+  </p>
+  <h3>How often can I take it?</h3>
+  <p>
+    Just as if you take too much, using marijuana too often can also
+    <a href="https://www.globaldrugsurvey.com/dosing-for-pleasure-and-why-less-is-often-more/">
+    produce an irreversible loss of the drug's potency.
+    </a>
+  </p>
+{% endblock %}
+
+
+{% block interactions_content %}
+  <p>
+    Learn about how different drugs interact with cannabis.
+  </p>
+
+{% endblock %}
+
+{% block combo_2C_X %}
+  {% include "partials/caution.njk" %}
+{% endblock %}
+
+{% block combo_Alcohol %}
+  {% include "partials/lowrisks.njk" %}
+{% endblock %}
+
+{% block combo_Amphetamines %}
+  {% include "partials/caution.njk" %}
+{% endblock %}
+
+{% block combo_Benzos %}
+  {% include "partials/lowriskd.njk" %}
+{% endblock %}
+
+{% block combo_Caffeine %}
+  {% include "partials/lowriskns.njk" %}
+{% endblock %}
+
+{% block combo_Cannabis %}
+{% include "partials/empty.njk" %}
+{% endblock %}
+
+{% block combo_Cocaine %}
+{% include "partials/caution.njk" %}
+{% endblock %}
+
+{% block combo_DMT %}
+{% include "partials/caution.njk" %}
+{% endblock %}
+
+{% block combo_DXM %}
+{% include "partials/lowrisks.njk" %}
+{% endblock %}
+
+{% block combo_Ketamine %}
+{% include "partials/lowrisks.njk" %}
+{% endblock %}
+
+{% block combo_LSD %}
+{% include "partials/caution.njk" %}
+{% endblock %}
+
+{% block combo_MDMA %}
+{% include "partials/lowrisks.njk" %}
+{% endblock %}
+
+{% block combo_MAOIs %}
+{% include "partials/lowrisks.njk" %}
+{% endblock %}
+
+{% block combo_Mushrooms %}
+{% include "partials/caution.njk" %}
+{% endblock %}
+
+{% block combo_nos %}
+{% include "partials/lowrisks.njk" %}
+{% endblock %}
+
+{% block combo_Opioids %}
+{% include "partials/lowrisks.njk" %}
+{% endblock %}
+
+{% block combo_SSRIs %}
+{% include "partials/lowriskns.njk" %}
+{% endblock %}
+
+
+{% block harm_reduction_content %}
+  <p class="side-note">
+    Head over to our <a href="me.html">ME</a> section if you would like to know
+    more about harm reduction.
+  </p>
+  <p>
+    There are certain precautions you should take before using cannabis. The
+    advice below helps to prepare you both physically and mentally. We want you
+    to be safe and enjoy your experience as much as possible, so if you have a
+    bad experience or are struggling with especially bad after-effects,
+    please take note of the advice below.
+  </p>
+{% endblock %}
+
+{% block harm_reduction_stage_1 %}
+<h3>THC:CBD</h3>
+<p>
+  In recent years, the potency of cannabis in the UK has been increasing, i.e.
+  the concentration of the major psychoactive cannabinoid in
+  cannabis, THC, has increased. Within the same time-frame, the number of
+  young people seeking treatment for cannabis dependence has also increased
+  [Ref 5, 10]. This upsurge is thought to be due to the rising THC levels.
+</p>
+<p>
+  At the same time as THC levels have risen, there has been a corresponding
+  decrease in the amount of the primary non-psychoactive, and possibly
+  protective, cannabinoid called Cannabidiol (CBD) [Ref. 14].
+</p>
+<p>
+  Cannabis users are advised to smoke varieties of cannabis that are high in
+  CBD e.g. resin/hash and to avoid '<a href="http://volteface.me/features/skunk-out-of-business/">skunk</a>'.
+  If you don't have much experience with cannabis, you are more likely to get
+  paranoia if the strain is low in CBD and high in THC.
+</p>
+<p>
+  Check <a href="https://www.leafly.com/start-exploring">Leafly</a> for
+  information on strains.
+</p>
+<p>
+  <small>
+    Written by <a href="https://www.ucl.ac.uk/cpu/team/psychopharmacologyunit/chandni-hindocha">Chandni Hindocha</a>, PhD student at UCL
+</small>
+</p>
+{% endblock %}
+
+{% block harm_reduction_stage_2 %}
+<h3>Feeling unwell?
+    <br>
+    <br>
+  <small>‘Whitey’ ‘White out’ ‘Green out’</small></h3>
+<p>
+  It's very uncommon, but you might feel unwell after consuming cannabis. It
+  can happen to anyone, although it is more common in first-time users.
+  Surprisingly, it can occur with low or high doses and with a strain you have
+  tried before. When this happens, people generally feel nausea, paranoia and
+  look pale (hence, ‘whitey’).
+</p>
+<p>
+  To help yourself or a friend consider doing the following:
+</p>
+<ul>
+  <li>
+    <p>
+      Drink some water and consume sugar. Be careful with overeating or
+      drinking too much: take water in short sips and eat small bites, take
+      your time to chew and swallow.
+    </p>
+  </li>
+  <li>
+    <p>
+      Lie down and take deep breathes. Slow down your breath rate.
+    </p>
+  </li>
+  <li>
+    <p>
+      To help someone who is whiteying: talk slowly and calmly to the person.
+      Find out if he/she needs conversation and attention or prefers silence
+      and some time on their own. Provide them with water and something to eat.
+      Help them breathe deeply and at a constant pace.
+    </p>
+  </li>
+  <li>
+    <p>
+      Take it easy for the rest of the day and rest. You should not consume
+      more drugs even if you feel full of energy again, as your body will be
+      less well-equipped to process them.
+    </p>
+  </li>
+</ul>
+{% endblock %}
+
+{% block harm_reduction_stage_3 %}
+  <h3>Hangover?</h3>
+  <p>
+    Some people observe feeling “hungover” after consuming weed, others don't.
+  </p>
+  <p>
+    <a href="https://www.whaxy.com/learn/marijuana-hangover">
+      You may experience some of the following:
+    </a>
+  </p>
+  <ul>
+    <li><span>Headache</span></li>
+    <li><span>Lethargy</span></li>
+    <li><span>Dehydration</span></li>
+    <li><span>Dry itchy eyes</span></li>
+    <li><span>Grogginess or spaciness</span></li>
+    <li><span>Feeling of being in slow motion</span></li>
+    <li><span>Mild nausea</span></li>
+    <li><span>Congestion</span></li>
+  </ul>
+  <p>
+    The best advice we can give to reduce hangovers is to drink plenty of
+    water and get enough sleep!
+  </p>
+{% endblock %}
+
+{% block risks_content %}
+  <p class="side-note">
+    Read more about dependence <a href="me.html">here</a>.
+  </p>
+  <p>
+    Contrary to what many weed smokers believe, addiction and dependence can
+    occur when using cannabis. Medical practitioners call it
+    <a href="https://www.verywell.com/cannabis-use-disorder-22295">
+    Cannabis use disorder</a>. However, it seems to be true that cannabis shows much lower
+    dependency rates than other recreational drugs, such as alcohol and
+    nicotine.
+  </p>
+  <h3>In the long term</h3>
+  <p>
+    Cannabis can have long-term effects when used heavily (i.e. daily or
+    almost daily).
+</p>
+<div class ="side-note">
+<p>
+      Check and compare your drug use anonymously with the
+    <a href="https://drugsmeter.com/cannabis/app/">
+      Drugsmeter Cannabis app.
+    </a>
+  </p>
+</div>
+  <p>
+    However, all the negative effects of cannabis seem to wear off after a
+    relatively short period of total abstinence, usually 4-6 weeks. [Ref. 1, 2]
+  </p>
+  <p>
+    Cannabis compounds affect a system that is crucial for the
+    development of your brain. Therefore, people who started using cannabis
+    during adolescence may develop:
+  </p>
+  <ul>
+    <li><span>Impaired spatial orientation</span></li>
+    <li><span>Impaired verbal fluency</span></li>
+    <li><span>Reduced <a href="https://en.wikipedia.org/wiki/Cognitive_inhibition">inhibition</a></span></li>
+  </ul>
+  <p>
+    In terms of the effects on daily users, there are discrepancies in the
+    scientific literature on the subject. But the most common negative effects
+    are thought to be [Ref. 4,16]:
+  </p>
+  <ul>
+    <li><span>Difficulty making decisions</span></li>
+    <li><span>Difficulty learning new things</span></li>
+    <li><span>Difficulty making future plans</span></li>
+  </ul>
+  <p>
+    If you mix cannabis with tobacco, you significantly increase the harms,
+    and aggregate the risks of developing health problems.
+  </p>
+    <div class="side-note">
+        <p>
+        Learn more in our section
+        <a href="#how-you-take-it-matters">How you take it matters...</a>
+        </p>
+    </div>
+  <h3>Lung cancer</h3>
+  <p>
+    Interestingly, THC has been found to stop tumours' growth and metastases.
+    In several studies, cannabis smokers (using only pure cannabis) were
+    found to have a <a href="http://www.attn.com/stories/1962/smoking-marijuana-effects-on-lungs?utm_source=dsfacebook&utm_medium=rerun2&utm_campaign=dsreruns">
+    reduced risk of lung cancer</a>. Although THC has a beneficial effect on
+    cancer cells, you need to look for
+    <a href="#harm-reduction-timeline">
+      balanced levels of THC:CBD, in order to
+    </a>
+    reduce the harm to your brain.
+  </p>
+  <p>
+    <a href="http://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease/Pages/Introduction.aspx">
+      Chronic obstructive pulmonary disease
+    </a>
+    is a broad term that includes different lung diseases. They all result
+    in difficulty of breathing.
+  </p>
+  <p>
+    <strong>Watch this video if you want to know more about medical cannabis and its
+    impact on human health.</strong>
+  </p>
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VsDic2na8co"></iframe>
+  </div>
+  <h3>When you want to quit...</h3>
+  <p>
+    While withdrawal symptoms are mild and can be easily overcome, weaning
+    yourself off weed does have some unpleasant effects. As with every single
+    drug, the intensity of the withdrawal depends on the quantity you’ve
+    trained your brain and body to tolerate/expect.
+  </p>
+  <p>
+    Here are some <a href="me.html">psychological and physical withdrawal symptoms</a> you
+    may experience when you are trying to quit:
+  </p>
+  <ul>
+    <li><span>Craving</span></li>
+    <li><span>Insomnia and nightmares</span></li>
+    <li><span>Demotivation</span></li>
+    <li><span>Lack of enjoyment</span></li>
+    <li><span>Aggressiveness and/or anger</span></li>
+    <li><span>Irritability</span></li>
+    <li><span>Unpleasant corporal symptoms</span></li>
+    <li><span>Decreased appetite</span></li>
+    <li><span>Nausea</span></li>
+    <li><span>Weight loss</span></li>
+    <li><span>Mood changes</span></li>
+  </ul>
+    <p class="side-note">
+      Remember: Don't hesitate to look for medical help:
+      <strong>you won't get in trouble</strong>.
+    </p>
+  <p>
+    <a href="#how-you-take-it-matters">Nicotine is often consumed with
+      cannabis</a>. Some withdrawal symptoms are common for most recreational
+      drugs, but for daily users of cannabis and tobacco combined, the double
+      withdrawal is stronger than if you choose to consume cannabis on its own.
+      This is another great reason to go for vaping/eating.
+  </p>
+{% endblock %}
+
+{% block the_law_content %}
+<h3>Europe</h3>
+<ul>
+  <li>
+    <p>
+      <strong>UK:</strong>
+      <a href="https://www.gov.uk/penalties-drug-possession-dealing">Illegal</a>
+      Class B drug. Possession: up to 5 years in prison, an unlimited fine or
+      both. Supply and production: up to 14 years in prison, an unlimited fine
+      or both.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>France:</strong>
+      <a href="http://www.thelocal.fr/20130610/legalized-cannabis-tea-could-be-on-drug-menu-for-french-patients-in-pharmacies">Illegal</a>
+       but permitted for medical products.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Germany:</strong>
+      <a href="http://sensiseeds.com/en/blog/legal-status-cannabis-germany/">
+      Not prosecuted up to 6-15 grams depending on the Ländern.</a> Only legal when a permission by 'Federal Institute for Drugs and Medical
+      Services' for medical use is obtained.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Netherlands:</strong> Legal (less than 5 grams is considered personal use).
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Norway:</strong> Legal (less than 15 grams is considered personal use).
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Spain</strong> and <strong>Portugal</strong>: Legal (only private growing and smoking are legal).
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Switzerland:</strong> Legal (growing up to four plants is legal).
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Russia:</strong> <a href="http://webehigh.org/moscow-russia/">Illegal</a>,
+      but decriminalised up to 6 grams.
+    </p>
+  </li>
+</ul>
+<h3>America</h3>
+<ul>
+  <li>
+    <p>
+      <strong>USA:</strong> <a href="http://www.governing.com/gov-data/state-marijuana-laws-map-medical-recreational.html">Illegal</a>
+      at the federal level, but legal for medical/recreational use in the
+      states of Colorado, Washington, Alaska and Oregon as well as in
+      some cities.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Canada:</strong> <a href="https://en.wikipedia.org/wiki/Legal_history_of_cannabis_in_Canada">Illegal</a>,
+      with exceptions in some cities.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Mexico:</strong> Possession is illegal but decriminalized up to
+      5 grams.
+      <a href=" http://druglawreform.info/country-information/mexico/item/205-mexico#2">Growing and selling are illegal.</a>
+    </p>
+  </li>
+</ul>
+<h3>Asia and Australasia</h3>
+<ul>
+  <li>
+    <p>
+      <strong>Australia:</strong>
+      <a href="http://www.theage.com.au/articles/2003/05/22/1053585645363.html">Illegal</a>,
+      but decriminalised in some states.
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>New Zealand:</strong>
+      <a href="http://www.police.govt.nz/advice/drugs-and-alcohol/cannabis-and-law">Illegal</a>.
+    </p>
+  </li>
+  <li>
+    <p><strong>Singapore:</strong>
+      <a href="http://goseasia.about.com/od/singapore/a/Singapore-Drug-Laws.htm">Illegal</a>.
+    </p>
+  </li>
+  <li>
+    <p><strong>Hong Kong:</strong>
+      <a href="http://www.police.gov.hk/ppp_en/04_crime_matters/drug/law_pen.html">Illegal</a>.
+  </p>
+  </li>
+  <li>
+    <p><strong>Israel:</strong>
+    <a href="http://www.imarijuana.com/laws/laws-by-country/israel">Illegal</a>.
+  </p>
+  </li>
+</ul>
+<h3>Africa</h3>
+<ul>
+  <li>
+    <p><strong>South Africa:</strong>
+      <a href="http://www.imarijuana.com/laws/laws-by-country/israel">Illegal</a>.
+  </p>
+  </li>
+</ul>
+<p>
+  <strong>Watch this video on why cannabis was criminalised:</strong>
+</p>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lsAZXLV0pPk"></iframe>
+</div>
+
+{% endblock %}
+
+{% block more_info_content %}
+<h3>FAQs</h3>
+<h4>Is cannabis harmless?</h4>
+<p>
+  Using cannabis is neither harmless nor free of potential health-related problems.
+  However, it appears to be one of the safest drugs and it can be even use
+  for therapy when used correctly.
+</p>
+<h4>Does cannabis make you 'dumber?'</h4>
+<p>
+  Occasional consumption has no effect on any cognitive skill. However, heavy
+  users can experience long-term impairment of some cognitive skills.
+</p>
+<h4>Can using cannabis lead to schizophrenia?</h4>
+<p>
+  There are big discrepancies in the scientific literature, but a clear
+  causal relationship between cannabis use and schizophrenia has not been found [Ref 2].
+</p>
+<h4>What's the difference between Sativa and Indica?</h4>
+<p>
+  <a href="https://primemind.com/sativa-vs-indica-science-or-folklore-5b6ba6eaaa0d#.755upr554">Sativa strains</a> tend to give an
+  uplifting and energetic high while indica strains give a relaxing and
+  calming high. However, this classification seems to be flawed! [Ref 18]
+</p>
+<h4>Will smoking cannabis lead me onto using more dangerous drugs?</h4>
+<p>
+  Cannabis is said to be a
+  '<a href="https://www.theguardian.com/science/sifting-the-evidence/2015/mar/03/is-cannabis-a-gateway-drug">gateway drug</a>,'
+    suggesting that the use of this drug leads users to consume other illicit
+  drugs such as cocaine and amphetamines. There is actually no evidence to prove
+  the gateway drug theory. There seems to be an association between the consumption of cannabis
+  and other illicit drugs, but we don't know if this relationship is a matter of <a href="http://rationalwiki.org/wiki/Correlation_does_not_imply_causation">causation, or simply correlation</a>.
+</p>
+  <h3>References</h3>
+  <ul>
+    <li><span>
+      Crean, R. D., Crane, N. A., & Mason, B. J. (2011). An evidence based
+      review of acute and long-term effects of cannabis use on executive
+      cognitive functions. Journal of addiction medicine, 5(1), 1.
+    </span></li>
+    <li><span>
+      Curran, H. V., Freeman, T. P., Mokrysz, C., Lewis, D. A., Morgan, C. J.,
+      & Parsons, L. H. (2016). Keep off the grass? Cannabis, cognition and
+      addiction. Nature Reviews Neuroscience, 17(5), 293-306.
+    </span></li>
+    <li><span>
+      Earleywine M, Barnwell SS. Decreased respiratory symptoms in cannabis
+      users who vaporize. Harm Reduct J (2007) 4:11. doi:10.1186/1477-7517-4-11
+      https://harmreductionjournal.biomedcentral.com/articles/10.1186/1477-7517-4-11
+    </span></li>
+    <li><span>
+      Filbey, F. M., McQueeny, T., Kadamangudi, S., Bice, C., & Ketcherside,
+      A. (2015). Combined effects of marijuana and nicotine on memory
+      performance and hippocampal volume. Behavioural brain research, 293,
+      46-53.
+    </span></li>
+    <li><span>
+      Freeman, TP., Morgan, C.J.A., Hindocha, C., Schafer, G., & Curran, H.V
+      (2014).  Just say ‘know’: how do cannabinoid concentrations influence
+      users’ estimates of cannabis potency and the amount they roll in joints?
+      Addiction 109(10):1686-94; doi: 10.1111/add.12634
+      http://onlinelibrary.wiley.com/doi/10.1111/add.12634/abstract
+    </span></li>
+    <li><span>
+      Hall W, Room R, Bondy S. Comparing the health and psychological risks of
+      alcohol, cannabis, nicotine and opiate use. In: Kalant H, Corrigan W,
+      Hall W, Smart R, eds. The health effects of cannabis. Toronto: Addiction
+      Research Foundation, 1999, pp. 477-508.
+    </span></li>
+    <li><span>
+      Hindocha, C Freeman, T.P., WInstock, A.R, Lynskey, M.T. (2016) Vaping
+      cannabis (marijuana) has the potential to reduce tobacco smoking in
+      cannabis users. Addiction 111(2); 375 – 375; doi: 10.1111/add.13190
+      http://onlinelibrary.wiley.com/doi/10.1111/add.13190/abstract
+    </span></li>
+    <li><span>
+      Hindocha, C., Freeman, T.P., Ferris, J.A., Lynskey, M.T., & Winstock,
+      A.R., (2016) No Smoke without tobacco? A global overview of cannabis and
+      tobacco routes of administration and their association with intention to
+      quit. Front Psychiatry, 7, 104; doi; 10.3389/fpsyt.2016.00104
+      journal.frontiersin.org/article/10.3389/fpsyt.2016.00104
+    </span></li>
+    <li><span>
+      Hindocha, C., Shaban, N.D.C., Freeman, T.P., Das, R.K., Gale, G.,
+      Shafer, G., Falconer, C.J., Morgan, C.J.A., & Curran, H.V (2015)
+      Associations between cigarette smoking and cannabis dependence: a study
+      of young cannabis users in the United Kingdom. Drug and Alcohol
+      Dependence 148; 165-171; doi:  10.1111/add.13190
+       http://dx.doi.org/10.1016/j.drugalcdep.2015.01.004
+     </span></li>
+    <li><span>
+      http://www.nta.nhs.uk/uploads/young-peoples-statistics-from-the-national-drug-treatment-monitoring-system.pdf
+    </span></li>
+    <li><span>
+      https://www.erowid.org/plants/cannabis/cannabis_dose.shtml
+    </span></li>
+    <li><span>
+      https://www.globaldrugsurvey.com/wp-content/uploads/2014/04/Printable_Cannabis1.pdf
+    </span></li>
+    <li><span>
+      http://www.drugscience.org/dl/dl_comparison.html
+    </span></li>
+    <li><span>
+      Iversen, L. L. (2001). The science of marijuana. Oxford University Press.
+    </span></li>
+    <li><span>
+      Kleiber D, Soellner R, Tossmann P. Cannabiskonsum in der Bundesrepublik
+      Deutschland: Entwicklungstendenzen, Konsummuster und Einflußfaktoren.
+      Bonn: Bundesministerium für Gesundheit, 1997.
+    </span></li>
+    <li><span>
+      Kouri EM, Pope HG. Abstinence symptoms during withdrawal from chronic
+      marijuana use. Exp Clin Psychopharmacol 2000;8(4):483-92.
+    </span></li>
+    <li><span>
+      Nutt, D. (2012). Drugs without the hot air. Minimising the Harms of
+      Legal and Illegal Drugs. Cambridge: UIT Cambridge Ltd Nutt, D. J.,
+      King, L. A., & Phillips, L. D. (2010). Drug harms in the UK: a
+      multicriteria decision analysis. The Lancet, 376(9752), 1558-1565.
+    </span></li>
+    <li><span>
+      Piomelli, D., & Russo, E. B. (2016). The cannabis sativa versus cannabis
+      indica debate: an interview with Ethan Russo, MD. Cannabis and
+      Cannabinoid Research, 1(1), 44-46.
+    </span></li>
+  </ul>
+{% endblock %}
