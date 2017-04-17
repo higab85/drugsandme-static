@@ -1,18 +1,6 @@
 var gulp          = require('gulp'),
     nunjucks      = require('gulp-nunjucks'),
-    fs            = require('fs'),
-    watch         = require('gulp-watch');
-
-
-// --- Copy only changes static files [1]
-var source = 'production/all/static';
-var destination = 'build/static';
-
-  gulp.task('copy_static', () =>{
-    gulp.src(source + '/**/*', {base: source})
-      .pipe(watch(source, {base: source}))
-      .pipe(gulp.dest(destination));
-  });
+    fs            = require('fs');
 
 
 // --- building templates
@@ -42,7 +30,7 @@ gulp.task('build_template', () =>{
 
 // --- DEFAULT
 
-gulp.task('default', ['build_template', 'copy_static'])
+gulp.task('default', ['build_template'])
 
 
 

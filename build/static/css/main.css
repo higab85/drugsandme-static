@@ -1303,6 +1303,7 @@ ul.no-decorate-list>li{
   font-weight: bold;
   color: white;
   font-size: 17px;
+  width: 100%;
 }
 #mobile-info-boxes .active h5{
   color: #fff;
@@ -1433,6 +1434,17 @@ small{
 }
 /*-- Mobile styles ----------------------------------------------------------*/
 
+#nav-mobile-social > a {
+  display: inline-block;
+  color: #fff;
+  padding: 0 7px;
+}
+
+#nav-mobile-social{
+  display: inline-block;
+  top: 10px;
+}
+
 #mobile-nav-collapse{
   background-color: #566470;
   border-top: 1px solid #000000;
@@ -1448,9 +1460,10 @@ small{
   font-size: 16px;
 }
 .mobile-nav-button {
-    background-color: #667887;
-    display: inline;
+    color: #ffffff;
+    display: inline-block;
 }
+
 .mobile-nav-button.active {
     background-color: #566470;
     display: inline;
@@ -1463,6 +1476,7 @@ small{
 }
 #mobile-nav-buttons-right{
   margin-top: 5px;
+  padding: 3px 4px;
 }
 #mobile-nav-button-search{
   height: 40px;
