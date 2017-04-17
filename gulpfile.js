@@ -11,7 +11,7 @@ handleData = (err, list) =>{
 // the once thing at the end is to make sure it ends the process
 // when it's done [3]
   list.forEach( function(page){
-   gulp.src("./production/all/"+page)
+   gulp.src("./src/all/"+page)
        .pipe(nunjucks.compile())
        .pipe(gulp.dest('build'))
         .once('error', function () {
@@ -24,7 +24,7 @@ handleData = (err, list) =>{
 }
 
 gulp.task('build_template', () =>{
-  fs.readdir('./production/non_templates', handleData)
+  fs.readdir('./src/non_templates', handleData)
 }
 );
 
