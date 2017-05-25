@@ -156,6 +156,7 @@ body {
 }
 
 @media (min-width: 300px) {
+
   .nav-left {
     float: left;
   }
@@ -208,6 +209,9 @@ h3 .small{
 
  @media (max-width: 767px) {
 
+   .read-more{
+       margin-left: 24%;
+   }
 
  /*Beginning of moble nav bar */
   #navbar{
@@ -426,6 +430,10 @@ h3 .small{
 
 
 @media (min-width: 768px) {
+
+   .read-more{
+       margin-left: 30%;
+   }
 
   .masthead,
   .mastfoot,
@@ -1258,12 +1266,12 @@ ul.no-decorate-list>li{
   position: absolute;
   bottom: 0px;
   margin-bottom: 15px;
-  margin-left: 30%;
 }
 .read-more>p{
   height: 40px;
   width: 123px;
   font-size: 22px;
+  text-align: center;
 }
 
 .full-length{
