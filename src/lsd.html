@@ -1,69 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    
-<meta name="description" content="Drugsand.me is an educational website about harm reduction for LSD use, including effects, risks, dose, onset, bad trips, microdosing and the right environment.">
+{% extends 'drug.njk' %}
 
-    <meta name="keywords" content="Drugs and me, Drugs, drugsandme, harm reduction, Cannabis, Cocaine, MDMA, drug">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>
+{% block title %}
   LSD | Dose, Onset, Effects | Risks| Drugs and Me
-</title>
-    <meta property="og:image" content="http://drugsand.static/article/images/icons/dnme-top-left.png" />
-    <!--  START Favicons  -->
-    <link rel="apple-touch-icon" sizes="180x180" href="static/images/icons/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="static/images/icons/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="static/images/icons/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="static/images/icons/favicons/manifest.json">
-    <link rel="mask-icon" href="static/images/icons/favicons/safari-pinned-tab.svg" color="#5bd57a">
-    <link rel="shortcut icon" href="static/images/icons/favicons/favicon.ico">
-    <meta name="msapplication-config" content="static/images/icons/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    <!--  END Favicons  -->
+{% endblock %}
 
+{% block meta_seo %}
+<meta name="description" content="Drugsand.me is an educational website about harm reduction for LSD use, including effects, risks, dose, onset, bad trips, microdosing and the right environment.">
+{% endblock %}
 
-    <script src="https://use.fontawesome.com/1cac72ccca.js"></script>
-
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="static/css/bootstrap.min.css">
-    <!-- <script src="static/js/libraries/jquery.min.js' %}"> </script> -->
-    <script src="static/js/libraries/jquery.min.js" charset="utf-8"></script>
-    <script src="static/js/bootstrap.js"> </script>
-    <script src="static/js/main.js"> </script>
-    <link rel="stylesheet" type="text/css" href="static/css/main.css">
-    <style media="screen">
-      @font-face {
-        font-family: Bebas Neue;
-        src: url(static/fonts/BebasNeue.otf);
-      }
-    </style>
-
-    <!--  Cookies Warning  -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/cookie-bar/1/cookiebar-latest.min.js?thirdparty=1&amp;always=1&amp;showNoConsent=1"></script>
-
-    <!-- Google analytics-->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-73235857-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-    <link href="http://cdn.jsdelivr.net/cookie-bar/1/cookiebar.min.css" rel="stylesheet">
-
-      <!--  JS Libraries -->
-     <script src="//www.google-analytics.com/analytics.js" async=""></script>
-
-    
+{% block header %}
   <style>
     .theme-bg{
       background-color:#F4CF6A !important;
@@ -80,298 +25,18 @@
   </style>
 
   <meta name="drug-name" content="LSD">
+{% endblock %}
 
-  </head>
 
-
-  <body>
-    <div class="site-wrapper">
-      
-  <div class="theme-bg">
-
-        <div class="cover-container site-wrapper-inner">
-          <div class="masthead clearfix" id="navbar">
-
-            <div class="inner hidden-xs">
-              <nav>
-                <ul class="nav">
-                  <li class="nav-left">
-                    <a href="index.html"><img id="home-top-left" src="static/images/icons/dnme-top-left.png" alt="" /></a>
-                  </li>
-                  <li class="nav-right" id="search">
-                    <div id="social-search">
-                      <a class="" href="https://facebook.com/drugsandmehub"><div class="nav-social-icon boxed"><img class="img-responsive" src="static/images/icons/social/social-icon-facebook.png" alt="facebook"></div></a>
-                      <a class="" href="https://twitter.com/drugsandmehub"><div class="nav-social-icon boxed"><img class="img-responsive" id="twitter-social-icon" src="static/images/icons/social/social-icon-twitter.png" alt="twitter"></div></a>
-                      <a class="" href="https://www.linkedin.com/company/10532041"><div class="nav-social-icon boxed"><img class="img-responsive" src="static/images/icons/social/social-icon-linkdin.png" alt="linkdin"></div></a>
-
-                    </div>
-                    <!-- START SEARCH ----------------------------------------->
-                    <div id="search-bar">
-                      <div class="has-feedback">
-                        <input id="searchText" type="text" class=" searchtext form-control boxed searchbarbox" placeholder="search" onfocus="this.placeholder=''" onblur="this.placeholder='search'"/>
-                        <i class="glyphicon glyphicon-search form-control-feedback text-right"></i>
-                      </div>
-
-                      <div id="item-picker" class="item-picker hidden pull-left">
-                        <div class="item alcohol">
-                          <a href="/alcohol.html" class="item-link">
-                            <h5 class="item-name hidden">Alcohol</h5>
-                          </a>
-                          <ul>
-                            <li class="tag">wine</li>
-                            <li class="tag">beer</li>
-                            <li class="tag">booze</li>
-                            <li class="tag">alcohol</li>
-                          </ul>
-                        </div>
-                        <div class="item cannabis">
-                          <a href="/cannabis.html" class="item-link">
-                            <h5 class="item-name hidden">Cannabis</h5>
-                          </a>
-                          <ul>
-                            <li class="tag">ganja</li>
-                            <li class="tag">skunk</li>
-                            <li class="tag">marihuana</li>
-                            <li class="tag">mary jane</li>
-                            <li class="tag">grass</li>
-                            <li class="tag">pot</li>
-                            <li class="tag">dank</li>
-                            <li class="tag">chronic</li>
-                            <li class="tag">resin</li>
-                            <li class="tag">weed</li>
-                            <li class="tag">buds</li>
-                            <li class="tag">kush</li>
-                            <li class="tag">cannabis</li>
-                          </ul>
-                        </div>
-                        <div class="item cocaine">
-                          <a href="/cocaine.html" class="item-link">
-                            <h5 class="item-name hidden">Cocaine</h5>
-                          </a>
-                          <ul>
-                            <li class="tag">white</li>
-                            <li class="tag">coke</li>
-                            <li class="tag">snow</li>
-                            <li class="tag">speedball</li>
-                            <li class="tag">dust</li>
-                            <li class="tag">crack</li>
-                            <li class="tag">charlie</li>
-                            <li class="tag">nose candy</li>
-                            <li class="tag">flake</li>
-                            <li class="tag">cocaine</li>
-                          </ul>
-                        </div>
-                        <div class="item ketamine">
-                          <a href="/ketamine.html" class="item-link">
-                            <h5 class="item-name hidden">Ketamine</h5>
-                          </a>
-                          <ul>
-                            <li class="tag">Special K</li>
-                            <li class="tag">Kit Kat</li>
-                            <li class="tag">Kay</li>
-                            <li class="tag">Ketamine</li>
-                          </ul>
-                        </div>
-                        <div class="item lsd">
-                          <a href="/lsd.html" class="item-link">
-                            <h5 class="item-name hidden">LSD</h5>
-                          </a>
-                          <ul>
-                            <li class="tag">lysergic acid diethylamide</li>
-                            <li class="tag">tab</li>
-                            <li class="tag">acid</li>
-                            <li class="tag">lucy</li>
-                            <li class="tag">LSD</li>
-                          </ul>
-                        </div>
-                        <div class="item mdma">
-                          <a href="/mdma.html" class="item-link">
-                            <h5 class="item-name hidden">MDMA</h5>
-                          </a>
-                          <ul>
-                            <li class="tag">X</li>
-                            <li class="tag">XTC</li>
-                            <li class="tag">E</li>
-                            <li class="tag">molly</li>
-                            <li class="tag">mandy</li>
-                            <li class="tag">ecstasy</li>
-                            <li class="tag">MDMA</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- END SEARCH-->
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <!--  Navbar for mobile -->
-            <div class="visible-xs">
-              <ul class="nav visible-xs">
-                <li class="pull-left">
-                  <a href="index.html"><img id="mobile-nav-brain" src="static/images/icons/brain.png" alt="Drugs and Me" /> </a>
-                </li>
-                <li id="mobile-nav-buttons-right" class="pull-right">
-                  <div class="mobile-nav-button">
-                    <i class="mobile-nav-button-search fa fa-search fa-2x" id="mobile-nav-button-search" aria-hidden="true"></i>
-
-                    <i class="hidden mobile-nav-button-search mobile-nav-button-close fa fa-times fa-2x" id="mobile-nav-button-search-close" aria-hidden="true"></i>
-                  </div>
-                  <div class="mobile-nav-button">
-                    <i class="mobile-nav-button-menu fa fa-bars fa-2x" id="mobile-nav-button-menu" aria-hidden="true"></i>
-                    <i class="hidden mobile-nav-button-menu mobile-nav-button-menu-close fa fa-times fa-2x" id="mobile-nav-button-menu-close" aria-hidden="true"></i>
-                    <!-- <h2 class="mobile-nav-button-menu mobile-nav-button-close hidden" id="mobile-nav-button-menu-close" >
-                      <i class="glyphicon glyphicon glyphicon-remove"></i>
-                    </h2> -->
-                    <!-- <img class="mobile-nav-button-menu" id="mobile-nav-button-menu" src="static/images/icons/menu.png" alt="Menu" /> -->
-                    <!-- <img class="mobile-nav-button-menu mobile-nav-button-close hidden" id="mobile-nav-button-menu-close" src="static/images/icons/close.png" alt="Close menu" /> -->
-                  </div>
-                </li>
-              </ul>
-              <div id="mobile-nav-collapse" class="hidden">
-                <div id="mobile-nav-collapse-search" class="hidden">
-                  <!-- START SEARCH ----------------------------------------->
-                  <div id="mobile-search-bar">
-                    <div class="has-feedback">
-                      <input id="mobile-searchText" type="text" class=" searchtext form-control searchbarbox" placeholder="search" onfocus="this.placeholder=''" onblur="this.placeholder='search'"/>
-                      <i class="glyphicon glyphicon-search form-control-feedback text-right"></i>
-                    </div>
-
-                    <div id="mobile-item-picker" class="item-picker hidden pull-left">
-                      <div class="item alcohol">
-                        <a href="/alcohol" class="item-link">
-                          <h5 class="item-name hidden">Alcohol</h5>
-                        </a>
-                        <ul>
-                          <li class="tag">wine</li>
-                          <li class="tag">beer</li>
-                          <li class="tag">booze</li>
-                          <li class="tag">alcohol</li>
-                        </ul>
-                      </div>
-                      <div class="item cannabis">
-                        <a href="/cannabis" class="item-link">
-                          <h5 class="item-name hidden">Cannabis</h5>
-                        </a>
-                        <ul>
-                          <li class="tag">ganja</li>
-                          <li class="tag">skunk</li>
-                          <li class="tag">marihuana</li>
-                          <li class="tag">mary jane</li>
-                          <li class="tag">grass</li>
-                          <li class="tag">pot</li>
-                          <li class="tag">dank</li>
-                          <li class="tag">chronic</li>
-                          <li class="tag">resin</li>
-                          <li class="tag">weed</li>
-                          <li class="tag">buds</li>
-                          <li class="tag">kush</li>
-                          <li class="tag">cannabis</li>
-                        </ul>
-                      </div>
-                      <div class="item cocaine">
-                        <a href="/cocaine" class="item-link">
-                          <h5 class="item-name hidden">Cocaine</h5>
-                        </a>
-                        <ul>
-                          <li class="tag">white</li>
-                          <li class="tag">coke</li>
-                          <li class="tag">snow</li>
-                          <li class="tag">speedball</li>
-                          <li class="tag">dust</li>
-                          <li class="tag">nose candy</li>
-                          <li class="tag">flake</li>
-                          <li class="tag">cocaine</li>
-                        </ul>
-                      </div>
-                      <div class="item ketamine">
-                        <a href="/ketamine" class="item-link">
-                          <h5 class="item-name hidden">Ketamine</h5>
-                        </a>
-                        <ul>
-                          <li class="tag">Special K</li>
-                          <li class="tag">Kit Kat</li>
-                          <li class="tag">Kay</li>
-                          <li class="tag">Ketamine</li>
-                        </ul>
-                      </div>
-                      <div class="item lsd">
-                        <a href="/lsd" class="item-link">
-                          <h5 class="item-name hidden">LSD</h5>
-                        </a>
-                        <ul>
-                          <li class="tag">lysergic acid diethylamide</li>
-                          <li class="tag">tab</li>
-                          <li class="tag">acid</li>
-                          <li class="tag">lucy</li>
-                          <li class="tag">LSD</li>
-                        </ul>
-                      </div>
-                      <div class="item mdma">
-                        <a href="/mdma" class="item-link">
-                          <h5 class="item-name hidden">MDMA</h5>
-                        </a>
-                        <ul>
-                          <li class="tag">X</li>
-                          <li class="tag">XTC</li>
-                          <li class="tag">E</li>
-                          <li class="tag">molly</li>
-                          <li class="tag">mandy</li>
-                          <li class="tag">ecstasy</li>
-                          <li class="tag">MDMA</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- END SEARCH-->
-                </div>
-                <div id="mobile-nav-collapse-menu" class="hidden">
-                  <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li id="mobile-nav-collapse-menu-drugs-collapse" class="mobile-nav-collapse-menu-collapsible">
-                      <span>Drugs</span> <i class=" pull-right fa fa-chevron-down" aria-hidden="true"></i>
-                      <ul class="hidden">
-                        <li><a href="alcohol.html">Alcohol</a></li>
-                        <li><a href="cannabis.html">Cannabis</a></li>
-                        <li><a href="cocaine.html">Cocaine</a></li>
-                        <li><a href="ketamine.html">Ketamine</a></li>
-                        <li><a href="lsd.html">LSD</a></li>
-                        <li><a href="mdma.html">MDMA</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="me.html">Me</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="about.html/#contact">Contact</a></li>
-                    <li><a href="donate.html">Donate</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="inner cover">
-              
-<div id="cover" class="col-xs-12 col-md-9">
-
-  
+{% block cover_contents %}
   <img class="img-responsive" style="width: 300px;"src="static/images/drugs/lsd/lsd-illustration.png" alt="lsd">
   <div id="cover-text">
     <h1>LSD</h1>
     <a href="http://thethirdwave.co/blog/lsd-street-names"><h4>Acid, Tab, Lucy, Lysergic acid diethylamide</h4></a>
   </div>
+{% endblock %}
 
-</div>
-
-            </div>
-          </div>
-        </div>
-        <div id="content" class=" container-fluid site-wrapper-inner">
-          
-<div class="row">
-
-  <div class="col-md-10" role="main">
-
-    <div id="intro">
-      
+{% block intro_content %}
   <p>
     <strong>In collaboration with <a href="http://beckleyfoundation.org/">
       The Beckley Foundation</a></strong>
@@ -394,50 +59,34 @@
     also believe LSD is a master key to unravel the inner workings of
     consciousness.
   </p>
+{% endblock %}
 
-      <p class="side-note">
-        Please read <a href="me.html">ME</a> for more general information about
-        recreational drugs.
-      </p>
-      <div class="text-center">
-        <div class="thing-to-take boxed tooltips" title="Click me!">
-          <h2 class="funky theme-light-color">1</h2>
-          
+{% block intro_content_1 %}
   <h3 class="funky">Set and setting</h3>
   <p class="hidden">
     <a href="#LSD-trip">Plan your trip</a> carefully and make adequate preparations
     to enhance your experience and avoid a 'bad trip'
   </p>
-
-        </div>
-        <div class="thing-to-take boxed tooltips" title="Click me!">
-          <h2 class="funky theme-light-color">2</h2>
-          
+{% endblock %}
+{% block intro_content_2 %}
   <h3 class="funky">Have a tripsitter</h3>
   <p class="hidden">
     Try to have a trip-sitter (ideally someone sober, had previous
     psychedelic experience and has read this guide!) or let a friend
     know when and where you will take it.
   </p>
-
-        </div>
-        <div class="thing-to-take boxed tooltips" title="Click me!">
-          <h2 class="funky theme-light-color">3</h2>
-          
+{% endblock %}
+{% block intro_content_3 %}
   <h3 class="funky">Dose sensibly</h3>
   <p class="hidden">
     Although LSD doesn’t cause dependence or addiction, don't take a higher
     dosage than recommended. Save your trips for special and
     meaningful occasions.
   </p>
+{% endblock %}
 
-        </div>
-      </div>
-    </div>
-    <div id="effects">
-      <h2 class="section-title"> Effects</h2>
 
-      
+{% block effects_content %}
   <p>
     Here are the most common effects of LSD. You won’t necessarily experience
     all these effects, every time you consume the drug, and it is possible that
@@ -448,19 +97,14 @@
     the time can actually have positive consequences <a href="#harm-reduction-timeline">
     if you understand them and know how to manage them</a>.
   </p>
+{% endblock %}
 
-      <h4>
-        The effects entail (from <span style="color: #26E224">positive</span>
-        to <span style="color: #E50000">negative</span>):
-      </h4>
-      <ul class="effects" id="effects-positive">
-        
+{% block effects_list_positive %}
   <li><span><a href="https://www.ncbi.nlm.nih.gov/pubmed/26847689/">Euphoria</a></span></li>
   <li><span>Positive mood</span></li>
+{% endblock %}
 
-      </ul>
-      <ul class="effects" id="effects-neutral">
-        
+{% block effects_list_neutral %}
   <li><span><a href="#LSD-loss-of-ego">Loss of the sense of self</a></span></li>
   <li><span>
     Distortions and hallucinations (visual, even with closed eyes; tactile,
@@ -480,10 +124,8 @@
   <li><span>
     <a href="LSD-time">Time travelling/time distortions</a>
   </span></li>
-
-      </ul>
-      <ul class="effects" id="effects-negative">
-        
+{% endblock %}
+{% block effects_list_negative %}
   <li><span>
     Confusion
   </span></li>
@@ -494,18 +136,11 @@
   <li><span>
     <a href="https://www.ncbi.nlm.nih.gov/pubmed/26847689/">Anxiety</a> *
   </span></li>
+{% endblock %}
 
-      </ul>
-      <p>
-        <i>
-        * Much more common among first-time users
-      </i>
-      </p>
-    </div>
 
-    <div id="dose-and-onset">
-      <h2 class="section-title">Dose and Onset</h2>
-      
+
+{% block dose_and_onset_content %}
   <h3>How? How much? When? For how long?</h3>
   <div class="side-note">
     <p>
@@ -602,12 +237,10 @@
     pressure than normal would make the effects to kick in faster. This can also vary with
     how much you have taken: the higher the dose you take, the longer the trip will last.
   </p>
+{% endblock %}
 
-    </div>
 
-    <div id="interactions">
-      <h2 class="section-title">Interactions</h2>
-      
+{% block interactions_content %}
   <p>
     As a rule, it is better not to mix different drugs, as the interactions
     can be unique (and unpredictable) for each person. This is especially important
@@ -634,127 +267,53 @@
     <a href="https://uk.linkedin.com/in/anna-ermakova-359961a6">Dr Anna Ermakova</a>,
     researcher at The Beckley Foundation.
   </p>
+{% endblock %}
 
-      <div id="interactions-interactive">
-        <div id="interactions-combo" class="col-md-12">
-          <div id="interactions-combo-addition" class="col-md-6">
-            <h4 class="funky"> <span class="current-drug-name"></span> + <span id="interactions-combo-addition-temp">?</span> =</h4>
-            <div class="img-responsive">
-              <img class="img-responsive" src="static/images/icons/interactions-gradient-with-text.png" alt="dangerous to synergy bar">
-            </div>
-          </div>
-          <div id="interactions-combo-result" class="boxed col-md-5">
-            <h4 class="funky"> SELECT A DRUG </h4>
-            <p id="interactions-combo-result-description">
-              
-              Click one of the drugs below and see how it mixes with <span class="current-drug-name"></span>.
-            </p>
-          </div>
-        </div>
-        <div id="interactions-table">
-          <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>2C-X</h5><div class="hidden">
-<h4 class="funky">LOW RISK</h4>
-<p class="interaction-lowrisks">
-  Using these drugs together can cause an effect stronger than taking them individually,
-  and they aren't likely to cause an adverse or undesirable reaction when used
-  carefully. Additional research should always be done before mixing drugs.
-</p>
+{% block combo_2C_X %}
+{% include "partials/lowrisks.njk" %}
+{% endblock %}
 
-</div></a>
-          <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>Alcohol</h5><div class="hidden">
-  <h4 class="funky">LOW RISK</h4>
-  <p class="interaction-lowriskd">
-    Combining these drugs can be very risky since they counteract each other's effects.
-    Effects for both drugs are reduced, making it easier to overdose since
-    your 'psychological baseline' is shifted from what you are used to.
-  </p>
+{% block combo_Alcohol %}
+{% include "partials/lowriskd.njk" %}
+{% endblock %}
 
-</div></a>
-          <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>Amphetamines</h5><div class="hidden">
-<h4 class="funky">CAUTION</h4>
-<p class="interaction-caution">
-  These combinations are not usually physically harmful, but may produce
-  undesirable effects, such as physical discomfort or overstimulation. Extreme
-  use may cause physical health issues.
-  Be careful when mixing these drugs.
-</p>
+{% block combo_Amphetamines %}
+{% include "partials/caution.njk" %}
+{% endblock %}
 
-</div></a>
-          <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>Benzos</h5><div class="hidden">
-  <h4 class="funky">LOW RISK</h4>
-  <p class="interaction-lowriskd">
-    Combining these drugs can be very risky since they counteract each other's effects.
-    Effects for both drugs are reduced, making it easier to overdose since
-    your 'psychological baseline' is shifted from what you are used to.
-  </p>
+{% block combo_Benzos %}
+{% include "partials/lowriskd.njk" %}
+{% endblock %}
 
-</div></a>
-          <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>Caffeine</h5><div class="hidden">
-<h4 class="funky">LOW RISK</h4>
-<p class="interaction-lowriskns">
-  Effects are additive. The combination is unlikely to cause any adverse or
-  undesirable reactions beyond those that might ordinarily be expected from
-  taking these drugs individually.
-</p>
+{% block combo_Caffeine %}
+{% include "partials/lowriskns.njk" %}
+{% endblock %}
 
-</div></a>
-          <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>Cannabis</h5><div class="hidden">
-<h4 class="funky">CAUTION</h4>
-<p class="interaction-caution">
-  These combinations are not usually physically harmful, but may produce
-  undesirable effects, such as physical discomfort or overstimulation. Extreme
-  use may cause physical health issues.
-  Be careful when mixing these drugs.
-</p>
+{% block combo_Cannabis %}
+{% include "partials/caution.njk" %}
+{% endblock %}
 
-</div></a>
-          <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>Cocaine</h5><div class="hidden">
-<h4 class="funky">CAUTION</h4>
-<p class="interaction-caution">
-  These combinations are not usually physically harmful, but may produce
-  undesirable effects, such as physical discomfort or overstimulation. Extreme
-  use may cause physical health issues.
-  Be careful when mixing these drugs.
-</p>
+{% block combo_Cocaine %}
+{% include "partials/caution.njk" %}
+{% endblock %}
 
-</div></a>
-          <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>DMT</h5><div class="hidden">
-<h4 class="funky">LOW RISK</h4>
-<p class="interaction-lowrisks">
-  Using these drugs together can cause an effect stronger than taking them individually,
-  and they aren't likely to cause an adverse or undesirable reaction when used
-  carefully. Additional research should always be done before mixing drugs.
-</p>
+{% block combo_DMT %}
+{% include "partials/lowrisks.njk" %}
+{% endblock %}
 
-</div></a>
-          <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>DXM</h5><div class="hidden">
-<h4 class="funky">LOW RISK</h4>
-<p class="interaction-lowrisks">
-  Using these drugs together can cause an effect stronger than taking them individually,
-  and they aren't likely to cause an adverse or undesirable reaction when used
-  carefully. Additional research should always be done before mixing drugs.
-</p>
+{% block combo_DXM %}
+{% include "partials/lowrisks.njk" %}
+{% endblock %}
 
-</div></a>
-          <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>Ketamine</h5><div class="hidden">
-<h4 class="funky">LOW RISK</h4>
-<p class="interaction-lowrisks">
-  Using these drugs together can cause an effect stronger than taking them individually,
-  and they aren't likely to cause an adverse or undesirable reaction when used
-  carefully. Additional research should always be done before mixing drugs.
-</p>
+{% block combo_Ketamine %}
+{% include "partials/lowrisks.njk" %}
+{% endblock %}
 
-</div></a>
-          <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>LSD</h5><div class="hidden">
-<h4 class="funky">LOW RISK</h4>
-<p class="interaction-lowrisks">
-  Using these drugs together can cause an effect stronger than taking them individually,
-  and they aren't likely to cause an adverse or undesirable reaction when used
-  carefully. Additional research should always be done before mixing drugs.
-</p>
+{% block combo_LSD %}
+{% include "partials/lowrisks.njk" %}
+{% endblock %}
 
-</div></a>
-          <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>MDMA</h5><div class="hidden">
+{% block combo_MDMA %}
 <h4 class="funky">LOW RISK</h4>
 <p class="interaction-lowrisks">
   (a.k.a. "Candyflipping")<br>
@@ -762,58 +321,38 @@
   and they aren't likely to cause an adverse or undesirable reaction when used
   carefully.
 </p>
-</div></a>
-          <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>MAOIs</h5><div class="hidden">
+{% endblock %}
+
+{% block combo_MAOIs %}
 <h4 class="funky">LOW RISK</h4>
 <p class="interaction-lowriskd">
   MAOIs, SSRIs and benzodiazepines are drugs that paramedics administer to
   people experiencing bad trips in order to calm them down.
 </p>
-</div></a>
-          <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>Mushrooms</h5><div class="hidden">
-<h4 class="funky">LOW RISK</h4>
-<p class="interaction-lowrisks">
-  Using these drugs together can cause an effect stronger than taking them individually,
-  and they aren't likely to cause an adverse or undesirable reaction when used
-  carefully. Additional research should always be done before mixing drugs.
-</p>
+{% endblock %}
 
-</div></a>
-          <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>Nitrous</h5><div class="hidden">
-<h4 class="funky">LOW RISK</h4>
-<p class="interaction-lowrisks">
-  Using these drugs together can cause an effect stronger than taking them individually,
-  and they aren't likely to cause an adverse or undesirable reaction when used
-  carefully. Additional research should always be done before mixing drugs.
-</p>
+{% block combo_Mushrooms %}
+{% include "partials/lowrisks.njk" %}
+{% endblock %}
 
-</div></a>
-          <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>Opioids</h5><div class="hidden">
-<h4 class="funky">LOW RISK</h4>
-<p class="interaction-lowriskns">
-  Effects are additive. The combination is unlikely to cause any adverse or
-  undesirable reactions beyond those that might ordinarily be expected from
-  taking these drugs individually.
-</p>
+{% block combo_nos %}
+{% include "partials/lowrisks.njk" %}
+{% endblock %}
 
-</div></a>
-          <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>SSRIs</h5><div class="hidden">
+{% block combo_Opioids %}
+{% include "partials/lowriskns.njk" %}
+{% endblock %}
+
+{% block combo_SSRIs %}
 <h4 class="funky">LOW RISK</h4>
 <p class="interaction-lowriskd">
   MAOIs, SSRIs and benzodiazepines are drugs that paramedics administer to
   people experiencing bad trips in order to calm them down.
 </p>
 
-</div></a>
+{% endblock %}
 
-
-        </div>
-        <p>
-          <small>
-          Source: <a href="http://wiki.tripsit.me/images/3/3a/Combo_2.png">tripsit.me</a>
-        </small>
-        </p>
-        
+{% block interactions_second_content %}
 <p>
   <a href="https://erowid.org/chemicals/lsd/lsd_interactions.shtml">Lithium</a>
   or tricyclics <i>(like Amitriptyline, Anafranil, Asendin, Aventyl,
@@ -835,12 +374,9 @@
   <a href="https://www.drugs.com/tramadol.html"><strong>Tramadol</strong></a>
   can result in seizures when taken with LSD, as Tromadol lowers the seizure threshold.
 </p>
+{% endblock %}
 
-      </div>
-    </div>
-    <div id="harm-reduction">
-      <h2 class="section-title">Harm reduction</h2>
-      
+{% block harm_reduction_content %}
   <p class="side-note">
     Head over to our <a href="me.html">ME</a> section if you would like to know
     more about harm reduction.
@@ -852,13 +388,9 @@
     bad experience or are struggling with especially bad after-effects,
     please take note of the advice below.
   </p>
+{% endblock %}
 
-      <div id="harm-reduction-timeline" class="row">
-        <div id="harm-reduction-stage-indicators" class="col-md-2 col-sm-2">
-          <div class="harm-reduction-stage-indicator active boxed theme-light-bg">
-            <h3 class="funky">BEFORE</h3>
-            <div class="hidden harm-reduction-stage-description">
-              
+{% block harm_reduction_stage_1 %}
 <h4>Every feeling is enhanced with LSD, this is why you want to plan your trip carefully.</h4>
 <ul>
   <li>
@@ -924,13 +456,9 @@
   <a href="#LSD-set-and-setting">Set and setting</a>
   for more information, we'll keep updating it!
 </p>
+{% endblock %}
 
-            </div>
-          </div>
-          <div class="harm-reduction-stage-indicator boxed">
-            <h3 class="funky">DURING</h3>
-            <div class="hidden harm-reduction-stage-description">
-              
+{% block harm_reduction_stage_2 %}
 <h4>Generally, the LSD experience can be divided into different stages:</h4>
 <ol>
   <li>
@@ -960,13 +488,9 @@
 <div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kIFlWe1oYlw"></iframe>
 </div>
+{% endblock %}
 
-            </div>
-          </div>
-          <div class="harm-reduction-stage-indicator boxed">
-            <h3 class="funky">AFTER</h3>
-            <div class="hidden harm-reduction-stage-description">
-              
+{% block harm_reduction_stage_3 %}
 <p>
   The LSD experience, even when positive, can often be emotionally
   and physically draining. Many people like to have a free day after taking
@@ -987,23 +511,8 @@
   avoid driving, cycling or doing any risky activities. Wait around 24 hours before doing anything
   that requires your full attention and physical coordination.
 </p>
-
-            </div>
-          </div>
-        </div>
-        <div id="harm-reduction-stage-descriptions" class="boxed col-md-8 col-sm-8">
-          <div class="harm-reduction-stage-description">
-            <p>
-              Please activate Javascript.
-            </p>
-          </div>
-          <div class="read-more">
-            <p class="funky boxed text-center">Read more</p>
-          </div>
-        </div>
-
-      </div>
-      
+{% endblock %}
+{% block harm_reduction_second_content %}
 <h3 id="LSD-trip">The trip</h3>
 <h4 id="LSD-bad-trip">Bad trip</h4>
 <p>
@@ -1481,12 +990,9 @@
   assessed twice per individual during the ‘trip’ since it lasts for several
   hours. Ref Dolder et al., 2016
 </p>
+{% endblock %}
 
-    </div>
-
-    <div id="risks">
-      <h2 class="section-title">Risks</h2>
-      
+{% block risks_content %}
 <h3>Dependence and abuse?</h3>
 <p>
   LSD doesn’t cause dependence or addiction, and <a href="http://pharmrev.aspetjournals.org/content/68/2/264">no physical withdrawal symptoms
@@ -1598,12 +1104,9 @@
   Get Dr. Fadiman's <a href="http://www.psychedelicexplorersguide.com/">‘The
   Psychedelic Explorer's Guide’</a> for the ultimate guide on psychedelics.
 </p>
+{% endblock %}
 
-    </div>
-
-    <div id="the-law">
-      <h2 class="section-title">The Law</h2>
-      
+{% block the_law_content %}
 <h3>Europe</h3>
 <ul>
   <li>
@@ -1718,12 +1221,9 @@
     </span>
   </li>
 </ul>
+{% endblock %}
 
-    </div>
-
-    <div id="more-info">
-      <h2 class="section-title">More information, references, useful links...</h2>
-      
+{% block more_info_content %}
 <h3>FAQs</h3>
     <h4>Will taking LSD make me peel my skin, or make me think I'm an orange?
       </a></h4>
@@ -1837,118 +1337,4 @@
 <li><span>Hendricks, P. S., Thorne, C. B., Clark, C. B., Coombs, D. W., & Johnson, M. W. (2015). Classic psychedelic use is associated with reduced psychological distress and suicidality in the United States adult population. Journal of Psychopharmacology, 29(3), 280-288.</span></li>
 <li><span>Johansen, P. Ø., & Krebs, T. S. (2015). Psychedelics not linked to mental health problems or suicidal behavior: A population study. Journal of Psychopharmacology, 0269881114568039.</span></li>
 </ul>
-
-    </div>
-  </div>
-  <div class="col-md-2" role="complementary">
-    <nav id="sidebar" class="nav nav-stacked bs-docs-sidebar hidden-print hidden-sm hidden-xs" >
-      <ul class="nav">
-        <li><a href="#intro">Intro</a></li>
-        <li><a href="#effects">Effects</a></li>
-        <li><a href="#dose-and-onset">Dose and Onset</a></li>
-        <li><a href="#interactions">Interactions</a></li>
-        <li><a href="#harm-reduction">Harm Reduction</a></li>
-        <li><a href="#risks">Risks</a></li>
-        <li><a href="#the-law">The Law</a></li>
-        <li><a href="#more-info">More information...</a></li>
-      </ul>
-      <br>
-      <div class="donate drugs-sidebar-boxes">
-        <a href="donate.html">
-          <h4><strong>Donate</strong></h4>
-        </a>
-      </div>
-      <div class="alcohol drugs-sidebar-boxes">
-        <a href="alcohol.html">
-          <h4>Alcohol</h4>
-        </a>
-      </div>
-      <div class="cannabis drugs-sidebar-boxes">
-        <a href="cannabis.html">
-          <h4>Cannabis</h4>
-        </a>
-      </div>
-      <div class="cocaine drugs-sidebar-boxes">
-        <a href="cocaine.html">
-          <h4>Cocaine</h4>
-        </a>
-      </div>
-      <div class="ketamine drugs-sidebar-boxes">
-        <a href="ketamine.html">
-          <h4>Ketamine</h4>
-        </a>
-      </div>
-      <div class="lsd drugs-sidebar-boxes">
-        <a href="lsd.html">
-          <h4>LSD</h4>
-        </a>
-      </div>
-      <div class="mdma drugs-sidebar-boxes">
-        <a href="mdma.html">
-          <h4>MDMA</h4>
-        </a>
-      </div>
-      <div class="drugs-sidebar-boxes">
-        <a href="me.html">
-          <h4><strong>+ Me</strong></h4>
-        </a>
-      </div>
-    </nav>
-  </div>
-</div>
-
-
-        </div>
-
-      </div>
-      <nav id="footer">
-        <ul class="nav hidden-xs" id="footer-wrapper">
-          <li class="nav-left">
-            <div class="mobile-nav-button" id="nav-mobile-social">
-                <a href="https://facebook.com/drugsandmehub">  <i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-                <a href="https://twitter.com/drugsandmehub"> <i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-                <a href="https://www.instragram.com/drugsandmehub"> <i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-            </div>
-            <p>
-              <font color="white">
-              Copyright © 2016. All rights reserved.
-            </font>
-            </p>
-          </li>
-          <li class="nav-right" id="footer-links">
-            <ul class="list-inline">
-              <li><a href="about.html"><font color="#fff">About us</font></a></li>
-              <li><a href="about.html#contact"><font color="#fff">Contact us</font></a></li>
-              <li><a href="disclaimer.html"><font color="#fff">Disclaimer</font></a></li>
-              <li><a href="donate.html"><font color="#fff">Donate</font></a></li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="nav visible-xs" id="footer-wrapper" style="padding-bottom:10px;">
-          <li class="">
-            <div class="mobile-nav-button" id="nav-mobile-social">
-                <a href="https://facebook.com/drugsandmehub">  <i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-                <a href="https://twitter.com/drugsandmehub"> <i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-                <a href="https://www.instragram.com/drugsandmehub"> <i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-            </div>
-            <p>
-              <font color="white">
-              Copyright © 2016. All rights reserved.
-            </font>
-            </p>
-          </li>
-          <li class="" id="footer-links">
-            <ul class="list-inline">
-              <li><a href="about.html"><font color="#fff">About us</font></a></li>
-              <li><a href="about.html#contact"><font color="#fff">Contact us</font></a></li>
-              <li><a href="disclaimer.html"><font color="#fff">Disclaimer</font></a></li>
-              <li><a href="donate.html"><font color="#fff">Donate</font></a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-
-    </div>
-
-  </body>
-</html>
+{% endblock %}

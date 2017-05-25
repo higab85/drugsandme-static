@@ -4,27 +4,29 @@ var gulp          = require('gulp'),
 
 
 // --- building templates
-handleData = (err, list) =>{
-  if(err)
-    return console.log(err);
+handleData = (page) => {
+
 
 // the once thing at the end is to make sure it ends the process
 // when it's done [3]
-  list.forEach( function(page){
-   gulp.src("./src/all/"+page)
-       .pipe(nunjucks.compile())
-       .pipe(gulp.dest('build'))
-        .once('error', function () {
-            process.exit(1);
-        })
-        .once('end', function () {
-            process.exit();
-        });
-   })
+gulp.src("./src/"+page)
+    .pipe(nunjucks.compile())
+    .pipe(gulp.dest('build'))
+    .once('error', function () {
+      process.exit(1);
+    })
+    .once('end', function () {
+      process.exit();
+    });
 }
 
+// filters non-html files from array
+onlyHTML = (file) => file.indexOf('html') > -1
+
 gulp.task('build_template', () =>{
-  fs.readdir('./src/non_templates', handleData)
+  fs.readdir('./src/', (err, list)=> {
+    list.filter(onlyHTML).forEach(handleData)
+  })
 }
 );
 

@@ -4,16 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    
+    {% block meta_seo %}{% endblock %}
     <meta name="keywords" content="Drugs and me, Drugs, drugsandme, harm reduction, Cannabis, Cocaine, MDMA, drug">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>
-  Drugs and Me - 404
-</title>
+    <title>{% block title %} {% endblock %}</title>
     <meta property="og:image" content="http://drugsand.static/article/images/icons/dnme-top-left.png" />
     <!--  START Favicons  -->
     <link rel="apple-touch-icon" sizes="180x180" href="static/images/icons/favicons/apple-touch-icon.png">
@@ -61,31 +59,13 @@
       <!--  JS Libraries -->
      <script src="//www.google-analytics.com/analytics.js" async=""></script>
 
-    
-<style>
-  .theme-bg{
-    background-color:#EF6767 !important;
-  }
-  .theme-color{
-    color: #EF6767 !important;
-  }
-  .theme-light-bg{
-    background-color: #EF6767 !important;
-  }
-  .theme-light-color{
-    color:#EF6767 !important;
-  }
-</style>
-
-
+    {% block header %} {% endblock %}
   </head>
 
 
   <body>
     <div class="site-wrapper">
-      
-  <div class="theme-bg">
-
+      {% block cover_background %} {% endblock %}
         <div class="cover-container site-wrapper-inner">
           <div class="masthead clearfix" id="navbar">
 
@@ -346,31 +326,12 @@
             </div>
           </div>
             <div class="inner cover">
-              
-<div id="cover" class="col-xs-12 col-md-9" style="background-color: #EF6767;">
-  <div id="cover-text">
-    <h1>Oops!</h1>
-    <h4>Looks like we don't have the site you're looking for... </h4>
-  </div>
-</div>
-
+              {% block cover %} {% endblock %}
             </div>
           </div>
         </div>
         <div id="content" class=" container-fluid site-wrapper-inner">
-          
-<div class="row">
-  <div class="col-md-10" role="main" id="me-content">
-    <div class='' id="intro">
-      <h3>
-        If you feel we're missing something, please drop us a line at
-        <a href="mailto:contact@drugsand.me">contact@drugsand.me</a>. We'd love to
-        hear any suggestions or remarks.
-      </h3>
-    </div>
-  </div>
-</div>
-
+          {% block content %} {% endblock %}
         </div>
 
       </div>
