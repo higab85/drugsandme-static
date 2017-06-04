@@ -624,7 +624,7 @@ h3 .small{
 
   #site-index #content {
     width: 80%;
-}
+  }
 }
 @media (min-width: 992px) {
   .masthead,
@@ -1329,6 +1329,7 @@ ul.no-decorate-list>li{
 
 #site-index #content{
   width: 60%;
+  margin-top: -50px;
 }
 #mobile-info-boxes>div{
   margin: -2px 0;
