@@ -132,6 +132,10 @@ body {
    color: #000;
  }
 
+#navbar-brand>a{
+  width: 100px;
+  margin-right: 5px
+}
  #navbar-brand>a:hover{
    background: #36434C !important;
    color: #fff;
@@ -142,9 +146,7 @@ body {
  }
 
 
-.nav>li{
-  display: inline-block;
-}
+
 .navbar-brand>h4{
   padding: 0 10px;
 }
@@ -1124,9 +1126,6 @@ h2.small{
 .donate{
   background-color: #F6DA5C;
 }
-/*.donate h4{
-  color: #000000;
-}*/
 
 .donate h3{
   color: #000000;
