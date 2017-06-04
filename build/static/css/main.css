@@ -122,6 +122,32 @@ body {
  #navbar{
    z-index: 5;
  }
+ #navbar-brand,
+ #navbar-brand>a{
+   display: inline-block;
+   vertical-align: middle;
+   padding: 3px;
+   height: 40px;
+   margin-top: 1.5px;
+   color: #000;
+ }
+
+ #navbar-brand>a:hover{
+   background: #36434C !important;
+   color: #fff;
+ }
+ #navbar-brand h4{
+   padding: 0;
+   margin: 5px;
+ }
+
+
+.nav>li{
+  display: inline-block;
+}
+.navbar-brand>h4{
+  padding: 0 10px;
+}
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -1068,6 +1094,11 @@ h2.small{
 }
 .harm-reduction{
   background-color: #6C7B8A;
+  color: #fff;
+  padding: 5px 15px;
+}
+.harm-reduction h3{
+  padding-left: 15px;
 }
 .harm-reduction a{
   color: #d0e8ff;
@@ -1093,9 +1124,9 @@ h2.small{
 .donate{
   background-color: #F6DA5C;
 }
-.donate h4{
+/*.donate h4{
   color: #000000;
-}
+}*/
 
 .donate h3{
   color: #000000;
