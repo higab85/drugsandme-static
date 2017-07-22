@@ -963,6 +963,17 @@ input:focus {
   background-color: #36434C;
 }
 
+.modafinil{
+  color: #000;
+  background-color: #F39243;
+  transition: 0.1s ease-in-out;
+}
+
+.modafinil:hover{
+  color: #fff;
+  background-color: #36434C;
+}
+
 .ketamine{
   color: #000;
   background-color: #BDC3C7;
