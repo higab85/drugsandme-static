@@ -164,7 +164,7 @@ $(document).ready(function(){
   $("#sidebar").affix({
     offset: {
       top: 480,
-      bottom: 100
+      bottom: 130
     }
   });
 
