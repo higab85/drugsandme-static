@@ -751,6 +751,9 @@ p{
   /*padding-bottom: 15px;*/
   /*margin: 20px 0px;*/
 }
+.drug .section-title>h2{
+  border-bottom: 2px solid #687A89;
+}
 
 .section-content{
   padding-bottom: 50px;
