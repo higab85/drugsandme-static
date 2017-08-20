@@ -7,10 +7,9 @@
 {% block meta_seo %}
 <meta name="description" content="Drugsand.me is an educational website about drug harm reduction, including safe ways of getting and using drugs, drug tolerance, dosing, substance abuse, and addiction.">
 <style>
-  #sidebar{
+  /*#sidebar{
     padding-top: 50px;
     padding-left: 20px;
-    top: 0px;
     left: 0px;
     right: 0;
     margin-top: -50px;
@@ -33,7 +32,7 @@
   .bs-docs-sidebar .nav>li>a:focus {
     width: 50%;
   }
-  #me-content>div{
+  .article>div{
     width: 104%;
   }
   .section-title{
@@ -58,17 +57,20 @@
   }
   .funky:hover{
     text-decoration: none;
-    /*color: #fff !important;*/
+    /*color: #fff !important;
   }
   #content{
     padding: 0 0 0 0 !important;
   }
+
+  .section-content{
+    padding-bottom: 50px
+  }
+*/
+  /*Me specific ---------------------*/
   #intro{
     padding-top: 50px;
     background-color: #d0d0d0;
-  }
-  .section-content{
-    padding-bottom: 50px
   }
   .me-getting-them{
     background-color: #eac435;
@@ -101,10 +103,10 @@
     background-color: #7d979e;
   }
   .me-legality{
-    background-color:#ca1551;
+    background-color:#f71735;
   }
   .me-legality-alt{
-    background-color: #dd6a90;
+    background-color: #f96b7e;
   }
 </style>
 {% endblock %}
@@ -141,7 +143,7 @@
     <div class="section">
       <div  id="intro" class="section-content">
         <h3 class="funky">YOU take the drugs <small>So find out how to make sure they don’t
-          get the better of you.</small></h3>
+          get the better of you</small></h3>
 
           <p>
             In this section we introduce you to concepts like drug tolerance and
@@ -511,6 +513,7 @@
         <li><a href="#abuse-and-addiction">Substance abuse</a></li>
         <li><a href="#legality">Legality</a></li>
       </ul>
+      {% include "partials/sidebar.njk" %}
     </nav>
   </div>
 </div>

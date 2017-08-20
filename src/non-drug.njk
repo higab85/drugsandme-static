@@ -1,0 +1,22 @@
+{% extends 'base.njk' %}
+
+
+{% block cover_background %}
+  <div class="theme-bg">
+{% endblock %}
+
+{% block content %}
+<div class="row">
+
+  <div class="col-md-9 article" role="main">
+    {% block article %} {% endblock %}
+  </div>
+  <div class="col-md-3" role="complementary">
+  <nav id="sidebar" class="nav nav-stacked affix bs-docs-sidebar hidden-print hidden-sm hidden-xs">
+      {% include "partials/sidebar.njk" %}
+    </nav>
+  </div>
+</div>
+
+<div class="partners"></div>
+{% endblock %}
