@@ -500,9 +500,13 @@ h3 .small{
 
 
 @media (min-width: 768px) {
-  
+
     .nav > li{
       margin: 0 -50px;
+    }
+
+    #footer > .nav > li{
+      margin: 0px;
     }
 
    .read-more{
