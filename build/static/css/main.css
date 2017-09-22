@@ -1621,6 +1621,13 @@ small{
   padding-right: 10px;
 }
 
+.team-card{
+  display: inline-block;
+  width: 20%;
+  height: 75px;
+  vertical-align: top;
+}
+
 /*-- Mobile styles ----------------------------------------------------------*/
 
 #nav-mobile-social > a {
