@@ -500,6 +500,10 @@ h3 .small{
 
 
 @media (min-width: 768px) {
+  
+    .nav > li{
+      margin: 0 -50px;
+    }
 
    .read-more{
        margin-left: 30%;
@@ -682,6 +686,8 @@ h3 .small{
     padding-right: 15vw;
     padding-left: 10vw;
   }
+
+
   .side-note{
     color: #687A89;
     border-width: 0 0 0 3px;
