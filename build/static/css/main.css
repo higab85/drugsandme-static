@@ -372,9 +372,14 @@ h3 .small{
     width: 40.5vw;
   }
   #title-me>div{
-    width: 25.5vw;
+    width: 24.5vw;
+  }
+  #title-me-collapse,
+  #title-me-collapse div{
     left: 56.4vw;
-    font-size: 12px;
+  }
+  #title-me-collapse h3{
+    font-size: 19px;
   }
 
   #title-me-button{
@@ -1537,7 +1542,7 @@ blockquote{
   .drugs-sidebar-boxes.andme{
     background-color: #fff;
   }
-#title-me-button{
+#title-me>div{
   background-color: #ffffff;
   color: #000000;
   -webkit-transition: background-color ease 1s;
@@ -1546,7 +1551,7 @@ blockquote{
   transition: background-color ease 1s;
 }
 
-#title-me-button:hover{
+#title-me>div:hover{
   background-color: #36434C !important;
   -webkit-transition: background-color ease 1s;
   -moz-transition: background-color ease 1s;
@@ -1665,10 +1670,10 @@ small{
   background-color: #f96b7e;
 }
 
-.black-color>h3{
+.index-menu-item>h3{
   color: #000;
 }
-.black-color:hover>h3{
+.index-menu-item:hover>h3{
   color: #fff;
 }
 
