@@ -371,6 +371,11 @@ h3 .small{
   #title-drugs>div{
     width: 40.5vw;
   }
+  #title-me>div{
+    width: 25.5vw;
+    left: 56.4vw;
+    font-size: 12px;
+  }
 
   #title-me-button{
     margin-left: 56.5vw;
@@ -1624,42 +1629,36 @@ small{
   background-color: #d0d0d0;
 }
 .me-getting-them{
-  color: #000;
   background-color: #eac435;
 }
 .me-getting-them-alt{
   background-color: #f1d97e;
 }
 .me-taking-them{
-  color: #000;
   background-color:#345995;
 }
 .me-taking-them-alt{
   background-color: #7d95bb;
 }
 .me-dosing{
-  color: #000;
   background-color:#03cea4;
 }
 .me-dosing-alt{
   background-color: #5edfc5;
 }
 .me-tolerance{
-  color: #000;
   background-color:#fb4d3d;
 }
 .me-tolerance-alt{
     background-color: #fc8d83;
 }
 .me-addiction{
-  color: #000;
   background-color:#335c67;
 }
 .me-addiction-alt{
   background-color: #7d979e;
 }
 .me-legality{
-  color: #000;
   background-color:#f71735;
 }
 .me-legality-alt{
@@ -1667,7 +1666,10 @@ small{
 }
 
 .black-color>h3{
-  color: #000 !important;
+  color: #000;
+}
+.black-color:hover>h3{
+  color: #fff;
 }
 
 /*-- Mobile styles ----------------------------------------------------------*/
