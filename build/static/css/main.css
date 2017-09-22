@@ -1625,6 +1625,7 @@ small{
   display: inline-block;
   width: 20%;
   height: 75px;
+  min-width: 100px;
   vertical-align: top;
 }
 
