@@ -1542,8 +1542,9 @@ blockquote{
   .drugs-sidebar-boxes.andme{
     background-color: #fff;
   }
-#title-me>div{
-  background-color: #ffffff;
+
+  .index-menu-item{
+  /*background-color: #ffffff;*/
   color: #000000;
   -webkit-transition: background-color ease 1s;
   -moz-transition: background-color ease 1s;
@@ -1551,26 +1552,12 @@ blockquote{
   transition: background-color ease 1s;
 }
 
-#title-me>div:hover{
+.index-menu-item:hover{
   background-color: #36434C !important;
   -webkit-transition: background-color ease 1s;
   -moz-transition: background-color ease 1s;
   -o-transition: background-color ease 1s;
   transition: background-color ease 1s;
-}
-#title-me-button:hover a{
-  color: #ffffff !important;
-  -webkit-transition: color ease 1s;
-  -moz-transition: color ease 1s;
-  -o-transition: color ease 1s;
-  transition: color ease 1s;
-}
-#title-me-button a{
-  color: #000000 !important;
-  -webkit-transition: color ease 1s;
-  -moz-transition: color ease 1s;
-  -o-transition: color ease 1s;
-  transition: color ease 1s;
 }
 
 .click-me-tip{
