@@ -8,9 +8,6 @@ jQuery.expr[':'].icontains = function(a, i, m) {
       .indexOf(m[3].toUpperCase()) >= 0;
 };
 
-//smooth scroll on links
-// $(function() {
-// });
 
 // will ckeck whether there is more to read on harm-reduction-stage-descriptions
 // and if not, will hide 'read more' button
@@ -85,13 +82,14 @@ $(document).ready(function(){
           $displacedMarginLeft = "57.9vw";
           $displacedMarginTop = "1.5vw";
         }
-      // $("#title-me-collapse").stop().removeClass("hidden");
-      // $("#title-me-collapse").stop().animate({
-      //   opacity: 1
-      // }, $animationSpeed);
+
+      $("#title-me-collapse").stop().removeClass("hidden");
       $('#title-me-button').stop().animate({
         marginTop: $displacedMarginTop,
         marginLeft: $displacedMarginLeft,
+      }, $animationSpeed);
+      $("#title-me-collapse").animate({
+        opacity: 1
       }, $animationSpeed);
       return false;
     },function(){
@@ -101,20 +99,21 @@ $(document).ready(function(){
           $originalMarginLeft = "56.5vw";
           $originalMarginTop = "0vw";
         }
-      // $("#title-me-collapse").stop().animate({
-      //   opacity: 0
-      // }, $animationSpeed, function(){
-      //   $("#title-me-collapse").stop().addClass("hidden");
-      //   return false;
-      // });
+
       $('#title-me-button').stop().animate({
         marginTop: $originalMarginTop,
         marginLeft: $originalMarginLeft,
       }, $animationSpeed, function(){
         $('#title-me-button').stop().removeAttr('style');
       });
+      $("#title-me-collapse").stop().animate({
+        opacity: 0
+      }, $animationSpeed, function(){
+        $("#title-me-collapse").stop().addClass("hidden");
     return false;
-  });
+    });
+    return false;
+});
 
 // ---------- Search -------------------------------------------
 
