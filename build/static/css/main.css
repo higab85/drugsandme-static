@@ -267,6 +267,13 @@ h3 .small{
    position: absolute;
  }
 
+ @media (max-width: 450px) {
+   #cover-container{
+     height: 100vw !important;
+   }
+ }
+
+
  @media (max-width: 767px) {
 
    .read-more{
