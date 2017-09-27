@@ -1120,14 +1120,29 @@ input:focus {
 .bs-docs-sidebar .nav>.active>a,
 .bs-docs-sidebar .nav>li>a:hover,
 .bs-docs-sidebar .nav>li>a:focus {
-  border: 2px solid black;
-  box-shadow: 2px 2px 0px #6B7A88;
+  /*border: 2px solid black;
+  box-shadow: 2px 2px 0px #6B7A88;*/
   background-color: #fff;
-  width: 50%;
-  /*width: 50%;*/
+  /*width: 180px;*/
   /*font-size: 16px;
   width: 180px;*/
   /*color: #1f1f1f;*/
+}
+
+.bs-docs-sidebar .nav>li{
+  width: 180px;
+  margin: 5px 0;
+}
+
+.bs-docs-sidebar .nav>.active{
+  border: 2px solid black;
+  padding: 0px;
+  background-color: #fff;
+  box-shadow: 2px 2px 0px #6B7A88;
+  border-radius: 0px;
+}
+.bs-docs-sidebar .nav>.active>p{
+  padding: 15px;
 }
 /*--- End sidebar styles -------------------------------------*/
 

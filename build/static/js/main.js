@@ -170,10 +170,10 @@ $(document).ready(function(){
   // adds theme-light-color to hovered content item, and only removes the class
   // if that element isn't active
   $('#sidebar a').hover(function(){
-    $(this).addClass('theme-light-color');
+    $(this).addClass('theme-light-color boxed');
   },function(){
     if(!$(this).parent().hasClass('active'))
-      $(this).removeClass('theme-light-color');
+      $(this).removeClass('theme-light-color boxed');
   });
 
   // Flips .thing-to-take
