@@ -36,6 +36,16 @@ $(document).ready(function(){
     }
   );
 
+
+  $("#navbar-brand").hover(function(){
+    $("#navbar-brand-dropdown").removeClass("hidden");
+    $(this).find("i").toggleClass("hidden");
+  }, function(){
+    $("#navbar-brand-dropdown").addClass("hidden");
+    $(this).find("i").toggleClass("hidden");
+  });
+
+
   var $currentDrug = $('meta[name=drug-name]').attr("content");
 
   // $("a[href='#*']:not([href='#'])").click(function(event){

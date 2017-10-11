@@ -168,16 +168,25 @@ h4{
   margin-right: 5px;
   text-decoration: none;
 }
- #navbar-brand>a:hover{
+ #navbar-brand a:hover{
    background: #36434C !important;
    color: #fff;
+   text-decoration: none;
  }
  #navbar-brand h4{
    padding: 0;
    margin: 5px;
  }
 
-
+#navbar-brand-dropdown{
+  position: absolute;
+}
+#navbar-brand-dropdown>.boxed{
+  display: block;
+  width: 100px;
+  padding: 5px;
+  color: black;
+}
 
 .navbar-brand>h4{
   padding: 0 10px;
@@ -1695,6 +1704,8 @@ small{
 .index-menu-item:hover>h3{
   color: #fff;
 }
+
+
 
 /*-- Mobile styles ----------------------------------------------------------*/
 
