@@ -1566,9 +1566,8 @@ blockquote{
   background-color: #36434C;
 }
 .drugs-sidebar-boxes a{
-      color: ##000;
+      color: #000;
       font-weight: 300;
-      text-decoration: none;
   }
 .drugs-sidebar-boxes a:hover{
     color: ##fff;
