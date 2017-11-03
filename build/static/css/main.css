@@ -277,6 +277,9 @@ h3 .small{
  }
 
  @media (max-width: 450px) {
+   #cover-text{
+     margin-top: -100px;
+   }
    #cover-container{
      height: 100vw !important;
    }
