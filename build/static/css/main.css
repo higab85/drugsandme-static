@@ -1630,17 +1630,16 @@ small{
 }
 
 .me-start-circles{
-  height: 100px;
-  width: 100px;
-  border-radius: 50px;
-  border: 1px solid black;
-  box-shadow: 2px 2px 0px #6B7A88;
-  display: inline-block;
-  text-align: center;
-  /*line-height: 93px;*/
-  margin: 20px;
-  padding-top: 40px;
-  color: #fff;
+  height: 110px;
+width: 110px;
+border-radius: 55px;
+border: 1px solid black;
+box-shadow: 2px 2px 0px #6B7A88;
+display: inline-block;
+text-align: center;
+margin: 20px;
+padding-top: 45px;
+color: #fff;
 }
 .me-start-circles:hover{
   color: #fff;
