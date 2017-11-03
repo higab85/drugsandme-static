@@ -276,7 +276,7 @@ h3 .small{
    position: absolute;
  }
 
- @media (max-width: 500px) {
+ @media (max-width: 450px) {
    #cover-text{
      top: -100px;
    }
