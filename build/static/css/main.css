@@ -1637,8 +1637,9 @@ small{
   box-shadow: 2px 2px 0px #6B7A88;
   display: inline-block;
   text-align: center;
-  line-height: 93px;
+  /*line-height: 93px;*/
   margin: 20px;
+  padding-top: 40px;
   color: #fff;
 }
 .me-start-circles:hover{
