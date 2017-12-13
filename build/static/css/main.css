@@ -164,7 +164,7 @@ h4{
  }
 
 #navbar-brand>a{
-  width: 100px;
+  width: 110px;
   margin-right: 5px;
   text-decoration: none;
 }
@@ -183,7 +183,7 @@ h4{
 }
 #navbar-brand-dropdown>.boxed{
   display: block;
-  width: 100px;
+  width: 110px;
   padding: 5px;
   color: black;
 }
