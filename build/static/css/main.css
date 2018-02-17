@@ -1486,6 +1486,10 @@ ul.no-decorate-list>li{
   width: 60%;
   margin-top: -50px;
 }
+#mobile-info-boxes{
+  margin-bottom: 30px;
+}
+
 #mobile-info-boxes>div{
   margin: -2px 0;
 }
