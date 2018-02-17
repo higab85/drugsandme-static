@@ -1486,7 +1486,7 @@ ul.no-decorate-list>li{
   margin-top: -50px;
 }
 #mobile-info-boxes{
-  margin-bottom: 30px;
+  margin-bottom: 30px !important;
 }
 
 #mobile-info-boxes>div{
