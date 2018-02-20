@@ -269,15 +269,15 @@ $(document).ready(function(){
   // - add class active
   // - expand information box
   // - make sure only one box is activated
-  $('#mobile-info-boxes>div').click(function(){
+  $('#index-harm-reduction').click(function(){
     if($(this).hasClass('active')){
-      $(this).find('p').addClass('hidden');
+      $(this).find('#index-harm-reduction-content').addClass('hidden-xs hidden-sm');
       $(this).removeClass('active');
     }else{
-      $('#mobile-info-boxes .active').find('p').addClass('hidden');
-      $('#mobile-info-boxes .active').removeClass('active');
+      $('#index-blurb .active').find('#index-harm-reduction-content').removeClass('hidden-xs hidden-sm');
+      $('#index-blurb .active').removeClass('active');
       $(this).addClass('active');
-      $(this).find('p').removeClass('hidden');
+      $(this).find('#index-harm-reduction-content').removeClass('hidden-xs hidden-sm');
     }
   })
 
