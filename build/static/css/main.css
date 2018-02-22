@@ -333,6 +333,9 @@ h3 .small{
      margin-top: 0px;
      color: #000;
    }
+   h3{
+     font-size: 20px;
+   }
  }
 
 
@@ -733,7 +736,7 @@ h3 .small{
     margin: 0 auto;
   }
 
-  #site-index #content {
+ #content {
     width: 80%;
   }
   .section>div{
@@ -1531,14 +1534,14 @@ ul.no-decorate-list>li{
 
 /*--- Page specific ---------------------------------------------------------*/
 
-#site-index #content{
+#content{
   width: 60%;
   margin-top: -50px;
 }
-.partners-logos{
+#partners-logos{
   text-align: center;
 }
-.partners-logos a{
+#partners-logos a{
   margin: 0 20px;
 }
 
