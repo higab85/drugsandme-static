@@ -1534,7 +1534,7 @@ ul.no-decorate-list>li{
 
 /*--- Page specific ---------------------------------------------------------*/
 
-#content{
+#site-index #content{
   width: 60%;
   margin-top: -50px;
 }

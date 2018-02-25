@@ -25,6 +25,13 @@ jQuery.expr[':'].icontains = function(a, i, m) {
 
 $(document).ready(function(){
 
+	  var slug;
+  slug= window.location.pathname.split('/');
+  slug = slug[slug.length - 2];
+  if (slug == 'en')
+  slug = "index"
+  $('.site-wrapper').attr('id',slug)
+
   var docWidth = document.documentElement.offsetWidth;
 
   [].forEach.call(
